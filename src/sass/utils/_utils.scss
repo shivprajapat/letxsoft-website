@@ -1,0 +1,44 @@
+.pl-15 {
+  padding-left: 15px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+.rel {
+  position: relative;
+}
+
+/* Global CSS */
+h1{font-size:38px}
+h2{font-size:48px}
+h3{font-size:40px}
+h4{font-size:24px;}
+h5{font-size:24px}
+h6{font-size:20px}
+p{font-size:16px; line-height:26px;}
+
+
+/* Heading */
+.heading_tab{position: relative;margin:auto auto 40px;max-width: 450px;}
+.heading_tab:after{content:"";clear: both;display: table}
+
+.heading{position: relative;text-transform: capitalize;}
+.heading_tab .sub_heading{color: $blue;
+  font-size: 18px;
+  font-weight: 600;}
+.heading .heading{font-weight:600;line-height: 1;font-size: 30px;font-weight: 900;}
+
+.blue_btn{
+  padding: 10px 32px;
+  color: #fff;
+border-radius: 50px;
+background-color: $aqua;
+transition: all 0.5s ease 0ms;
+border: 1px solid transparent;
+&:hover{
+  border: 1px solid $aqua;
+  color: $aqua;
+  background-color: transparent;
+}
+}
