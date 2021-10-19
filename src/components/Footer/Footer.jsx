@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAngleDoubleRight, FaMapMarkerAlt, FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaAngleDoubleRight, FaMapMarkerAlt, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
 
 export default function Footer() {
@@ -16,8 +16,8 @@ export default function Footer() {
                                             <a href="/">Letxsoft technology</a>
                                         </div>
                                         <div className="text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corporis at porro, qui officia aliquid quisquam aperiam a sunt ipsum iure doloremque molestias. Delectus repellat asperiores velit ut
-                                            eius nemo?
+                                            <h5>opening hours</h5>
+                                            <p>Monday to Saturday- 10 A.M to 7 P.M </p>
                                         </div>
                                         <ul className="social-box list-unstyled mb-0">
                                             <li>
@@ -27,7 +27,7 @@ export default function Footer() {
                                             </li>
                                             <li>
                                                 <a href="https://in.linkedin.com/in">
-                                                    <FaLinkedinIn />
+                                                    <FaTwitter />
                                                 </a>
                                             </li>
                                             <li>
@@ -130,7 +130,7 @@ export default function Footer() {
                                                     <FaMapMarkerAlt />
                                                 </span>
                                                 <strong>Address</strong>
-                                                <a href="https://g.page/HelpfulInsight?share"> Jaipur, India 302020</a>
+                                                <a href="https://g.page/HelpfulInsight?share"> s-1 top floor pradhan-tower, sec-5, near mahindra showroom,tonk road, jaipur </a>
                                             </li>
                                             <li>
                                                 <span className="icon">
@@ -144,7 +144,7 @@ export default function Footer() {
                                                     <HiOutlineMail />
                                                 </span>
                                                 <strong>E-Mail</strong>
-                                                <a href="mailto:info@helpfulinsightsolution.com">info@letxsoft.com</a>
+                                                <a href="mailto:info@helpfulinsightsolution.com">info@letxsoft.com </a>
                                             </li>
                                         </ul>
                                     </div>

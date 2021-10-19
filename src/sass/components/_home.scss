@@ -1,8 +1,4 @@
 .home {
-  // background: -o-radial-gradient(50% 50%, closest-side, #0c5fe7 0, #16149f 100%)
-  //   0 0 no-repeat padding-box;
-  // background: radial-gradient(closest-side at 50% 50%, #0c5fe7 0, #16149f 100%)
-  //   0 0 no-repeat padding-box;
   background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
   background: linear-gradient(to right, #0083b0, #00b4db);
 
@@ -17,8 +13,9 @@
   }
 
   &_content {
+    max-width: 450px;
     h1 {
-      font-size: 55px;
+      font-size: 50px;
       color: $white;
       font-weight: 700;
       line-height: 60px;
@@ -26,9 +23,9 @@
       text-transform: capitalize;
     }
     p {
+      text-transform: capitalize;
       color: $white;
-      font-size: 18px;
-      max-width: 450px;
+      font-size: 20px;
       margin: 20px 0;
       line-height: 28px;
       font-weight: 400;
@@ -48,14 +45,16 @@
     border-radius: 50px;
     color: $white;
     background-color: $aqua;
-    text-transform: uppercase;
+    text-transform: capitalize;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
     border: 2px solid transparent;
     transition: all 0.1s linear;
     font-weight: 600;
+    margin-right:10px;
     &:hover {
       background-color: transparent;
+      color: $white;
       border: 2px solid $aqua;
       box-shadow: 0 0 10px $aqua;
     }

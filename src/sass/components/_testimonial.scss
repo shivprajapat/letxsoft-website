@@ -1,0 +1,45 @@
+.testimonial {
+  position: relative;
+  padding-bottom: 70px;
+  .heading_tab{
+    text-align: center;
+  }
+  &_tab {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00968814;
+    cursor: pointer;
+    transition: transform 0.5s;
+    &_item {
+      margin-bottom: 15px;
+    }
+    &_img img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      margin-right: 10px;
+    }
+    &_info {
+      p {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        color: $aqua;
+      }
+      span {
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+      }
+    }
+    .desc{
+        p{
+        font-size: 13px;
+        margin: 0;
+        padding: 5px;
+    }}
+  }
+  .slick-slide {
+    margin: 0px 9px;
+    width: 352px !important;
+}
+}

@@ -2,138 +2,155 @@
 .main-footer {
   position: relative;
   padding: 100px 0px 0px;
-  background: -webkit-radial-gradient(circle farthest-corner at center center, #534db8 0%, #1c2d5a 100%);
-  background: -moz-radial-gradient(circle farthest-corner at center center, #534db8 0%, #1c2d5a 100%);
-  background: radial-gradient(circle farthest-corner at center center, #534db8 0%, #1c2d5a 100%);
+  background: -webkit-radial-gradient(
+    circle farthest-corner at center center,
+    #2fb4db 0%,
+    #1c2d5a 100%
+  );
+  background: -moz-radial-gradient(
+    circle farthest-corner at center center,
+    #2fb4db 0%,
+    #1c2d5a 100%
+  );
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #2fb4db 0%,
+    #1c2d5a 100%
+  );
   overflow: hidden;
+  .widgets-section {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .logo-widget {
+    position: relative;
+    .logo {
+      position: relative;
+      width: 100%;
+      margin-bottom: 18px;
+      a {
+        font-size: 25px;
+        text-transform: capitalize;
+        color: #fff !important;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    }
+    .text {
+      position: relative;
+      color: #ffffff;
+      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: capitalize;
+      font-family: "Lato";
+    }
+    .social-box {
+      position: relative;
+      li {
+        position: relative;
+        margin-right: 8px;
+        display: inline-block;
+        a {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          text-align: center;
+          line-height: 40px;
+          display: inline-block;
+          background-color: #ffffff;
+          -webkit-transition: all 300ms ease;
+          -ms-transition: all 300ms ease;
+          -o-transition: all 300ms ease;
+          -moz-transition: all 300ms ease;
+          transition: all 300ms ease;
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: #2fb4db;
+          }
+                }
+      }
+    }
+  }
+  .footer-widget {
+    position: relative;
+    z-index: 1;
+    h5 {
+      position: relative;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 1.2em;
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        bottom: 0px;
+        height: 1px;
+        width: 30px;
+        background-color: #ffffff;
+      }
+    }
+    .list-link li {
+      line-height: 30px;
+      a {
+        position: relative !important;
+        color: #ffffff;
+        font-size: 15px;
+        -webkit-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        transition: all 300ms ease;
+        svg {
+          margin-right: 5px;
+        }
+           }
+    }
+  }
+.contact-widget{
+    ul li {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 50px;
+    margin-bottom: 28px;
+    line-height: 1.6em;
+    a {
+      color: #fff;
+      font-family: "Lato";
+      text-transform: capitalize;
+    }
+    .icon {
+      position: absolute;
+      left: 0px;
+      top: 4px;
+      font-size: 35px;
+      line-height: 1em;
+      color: #ffffff;
+    }
+    strong {
+      position: relative;
+      display: block;
+      font-weight: normal;
+    }
+  }
 }
-.main-footer .widgets-section {
-  position: relative;
-  margin-bottom: 40px;
-}
-.main-footer .logo-widget {
-  position: relative;
-}
-.main-footer .footer-widget {
-  position: relative;
-  z-index: 1;
-}
-.main-footer .logo-widget .logo {
-  position: relative;
-  width: 100%;
-  margin-bottom: 18px;
-}
-.main-footer .logo-widget .logo  a {
-  font-size: 25px;
-  text-transform: capitalize;
-  color: #fff !important;
-  text-decoration: none;
-  font-weight: 600;
-}
-.main-footer .logo-widget .text {
-  position: relative;
-  color: #ffffff;
-  margin-bottom: 25px;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: 'Lato';
-}
-.main-footer .logo-widget .social-box {
-  position: relative;
-}
-.main-footer .logo-widget .social-box li {
-  position: relative;
-  margin-right: 8px;
-  display: inline-block;
-}
-.main-footer .logo-widget .social-box li a {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  text-align: center;
-  line-height: 40px;
-  display: inline-block;
-  background-color: #ffffff;
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.main-footer .footer-widget h5 {
-  position: relative;
-  color: #ffffff;
-  font-weight: 500;
-  line-height: 1.2em;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-.main-footer .footer-widget h5:before {
-  position: absolute;
-  content: '';
-  left: 0px;
-  bottom: 0px;
-  height: 1px;
-  width: 30px;
-  background-color: #ffffff;
-}
-.main-footer .footer-widget .list-link li{line-height: 30px;}
-.main-footer .footer-widget .list-link li a {
-  position: relative !important;
-  color: #ffffff;
-  font-size: 15px;
-  -webkit-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-.main-footer .footer-widget .list-link li a svg{margin-right: 5px;}
-
-.main-footer .contact-widget ul li {
-  position: relative;
-  color: #ffffff;
-  font-size: 16px;
-  padding-left: 60px;
-  margin-bottom: 28px;
-  line-height: 1.6em;
-}
-.main-footer .contact-widget ul li  a{
-  color: #fff;
-  font-family: 'Lato';
-}
-.main-footer .contact-widget ul li .icon {
-  position: absolute;
-  left: 0px;
-  top: 4px;
-  font-size: 44px;
-  line-height: 1em;
-  color: #ffffff;
-}
-.main-footer .contact-widget ul li strong {
-  position: relative;
-  display: block;
-  font-weight: normal;
-}
-.main-footer .footer-bottom {
+.footer-bottom {
   position: relative;
   padding: 20px 0px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  .copyright {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+  }
 }
-.main-footer .footer-bottom .copyright {
-  position: relative;
-  color: #ffffff;
-  font-size: 16px;
-}
-
-.main-footer .logo-widget .social-box li a svg {
-  width: 20px;
-  height: 20px;
-  fill: #534db8;
-}
-.main-footer:before {
+&:before {
   content: "";
   position: absolute;
   left: 0;
@@ -145,46 +162,48 @@
   height: 100%;
   opacity: 0.05;
 }
+.spinning-circle-top {
+  width: 530px;
+  height: 530px;
+  top: -52%;
+  left: -3%;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px dashed #2fb4db;
+  animation: rotated 35s infinite linear;
+}
+.spinning-circle-bottom {
+  width: 350px;
+  height: 350px;
+  right: -4%;
+  bottom: -30%;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px dashed #2fb4db;
+  animation: rotated 35s infinite linear;
+}
+}
+
 
 @-webkit-keyframes rotated {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes rotated {
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-.main-footer .spinning-circle-top {
-    width: 530px;
-    height: 530px;
-    top: -52%;
-    left: -3%;
-    position: absolute;
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px dashed #362ce6;
-    animation: rotated 35s infinite linear;
-}
-.main-footer .spinning-circle-bottom {
-    width: 350px;
-    height: 350px;
-    right: -4%;
-    bottom: -30%;
-    position: absolute;
-    display: inline-block;
-    border-radius: 50%;
-    border: 2px dashed #362ce6;
-    animation: rotated 35s infinite linear;
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

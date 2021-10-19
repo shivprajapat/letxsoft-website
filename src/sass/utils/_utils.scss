@@ -23,8 +23,10 @@ p{font-size:16px; line-height:26px;}
 .heading_tab{position: relative;margin:auto auto 40px;max-width: 450px;}
 .heading_tab:after{content:"";clear: both;display: table}
 
-.heading{position: relative;text-transform: capitalize;}
-.heading_tab .sub_heading{color: $blue;
+.heading{position: relative;text-transform: capitalize;     font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.heading_tab .sub_heading{color: $aqua;
   font-size: 18px;
   font-weight: 600;}
 .heading .heading{font-weight:600;line-height: 1;font-size: 30px;font-weight: 900;}

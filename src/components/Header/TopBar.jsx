@@ -15,11 +15,11 @@ const TopBar = () => {
           <Row className="align-items-center">
             <Col md={6} lg={8} className="top-header-left">
               <ul>
+                {/* <li>
+                  <span>Call Us:</span>
+                </li> */}
                 <li>
-                  <span>Call Us:</span>123456789
-                </li>
-                <li>
-                  <span>Email us:</span>example@gmail.com
+                  <span>Email us:</span>info@letxsoft.co,
                 </li>
                 <li>
                   <span>address:</span>Jaipur India

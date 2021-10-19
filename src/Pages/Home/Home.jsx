@@ -4,20 +4,22 @@ import Services from "../Services/Services";
 import HomeCard from "./HomeCard/HomeCard";
 import About from '../About/About'
 import Blog from "../Blog/Blog";
+import Testimonial from "../testimonial/Testimonial";
 const Home = () => {
   return (
     <React.Fragment>
       <div className="home" id="home">
-      <div className="grid-animation"><div></div><div></div><div></div><div></div></div>
+      <divnpm className="grid-animation"><div></div><div></div><div></div><div></div></divnpm>
       <Container>
         <Row>
           <Col md={6} lg={6}>
             <div className="home_content">
               <h1>software development company in india</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, soluta! Totam, modi.</p>
+              <p>build for smart future</p>
               <div className="btn-block">
-                <a href="/" className='home_btn'>Get Started</a>
-              </div>
+              <a href="/" className='home_btn'> our work</a>
+              <a href="/" className='home_btn'> contact us</a>
+               </div>
             </div>
           </Col>
           <Col md={6} lg={6}>
@@ -32,6 +34,7 @@ const Home = () => {
     <About/>
     <Services/>
     <Blog/>
+    <Testimonial/>
     </React.Fragment>
   );
 };

@@ -31,7 +31,12 @@ export default function Header() {
                     Career
                   </NavLink>
                 </li>
-                <NavDropdown title="Services" id="basic-nav-dropdown">
+                <li>
+                  <NavLink activeClassName="active" to="/career">
+                      Services
+                  </NavLink>
+                </li>
+                {/* <NavDropdown title="Services" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
                     Another action
@@ -39,7 +44,7 @@ export default function Header() {
                   <NavDropdown.Item href="#action/3.3">
                     Something
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
                 <li>
                   <NavLink activeClassName="active" to="/contact">
                     Contact

@@ -1,6 +1,56 @@
 .home_card {
-    position: relative;
-    width: 100%;
-    top: -100px;
-    z-index: 99;
+  position: relative;
+  width: 100%;
+  top: -100px;
+  z-index: 99;
+  .home-item {
+    box-shadow: 0px 5px 15px 0px #0000001a;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #2fb4db;
+      transform: translateY(-10px);
+      color: #fff;
+      margin-top: -10px;
+    }
+    &:hover .icon i,
+    &:hover h3,
+    &:hover li {
+      color: #fff !important;
+    }
+    .icon {
+      margin-bottom: 20px;
+      i {
+        font-size: 40px;
+        display: inline-block;
+        transition: all 0.5s ease;
+      }
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #222222;
+      margin: 0 0 15px;
+      line-height: 30px;
+      text-transform: capitalize;
+      transition: all 0.5s ease;
+    }
+    .checklist {
+      padding: 0;
+      max-width: 200px;
+      margin: auto;
+      li {
+        font-size: 16px;
+        line-height: 26px;
+        color: #555555;
+        margin: 0;
+        transition: all 0.5s ease;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+  }
 }

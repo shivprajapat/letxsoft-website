@@ -5,7 +5,7 @@
     display: inline-block;
     &_img {
       border-radius: 5px 5px 0 0;
-      width: 350px;
+      // width: 350px;
       height: 310px;
       img {
         width: 100%;
@@ -44,6 +44,7 @@
             margin-bottom: 16px;
             font-size: 24px;
             font-weight: 600;
+            text-transform: capitalize;
             color: #354463;
             letter-spacing: -0.6px;
           }
