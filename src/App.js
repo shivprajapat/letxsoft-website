@@ -4,7 +4,7 @@ import './sass/responsive.scss'
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import Routes from "./Routes";
 
 function App() {

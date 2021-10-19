@@ -3,8 +3,8 @@ import { Container } from "react-bootstrap";
 import Slider from "react-slick";
 
 import Testimonialdata from './Testimonialdata'
-import TestimonialItem from '../../components/TestimonialItem'
-import Heading from "../../components/Heading";
+import TestimonialItem from '../../../components/TestimonialItem'
+import Heading from "../../../components/Heading";
 var client = {
     dots: true,
     infinite: true,
@@ -40,7 +40,7 @@ var client = {
 };
 export default function Testimonial() {
     return (
-        <div className="testimonial">
+        <section className="testimonial">
             <Container>
             <Heading heading="WHAT CLIENT SAY" top_heading='TESTIMONIAL' />
 
@@ -55,6 +55,6 @@ export default function Testimonial() {
 
             </Slider>
             </Container>
-        </div>
+        </section>
     );
 }

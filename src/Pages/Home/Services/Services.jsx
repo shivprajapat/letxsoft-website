@@ -1,8 +1,8 @@
 import React from 'react'
 import {Container,Row,Col} from 'react-bootstrap'
 import {data} from './data'
-import ServiceCard from '../../components/ServiceCard'
-import Heading from '../../components/Heading'
+import ServiceCard from '../../../components/ServiceCard'
+import Heading from '../../../components/Heading'
 export default function Services() {
     return (
 <section className="services-section">
@@ -17,7 +17,7 @@ export default function Services() {
             <Row>
             {data.map((item,index)=>{
                     return(
-                        <Col lg={3} md={6} sm={12} className="service-block d-flex" key={index}>
+                        <Col lg={3} md={6} sm={12} className="service-block d-flex card_space" key={index}>
                         <ServiceCard {...item}/>
                         </Col>
                     )

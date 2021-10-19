@@ -47,14 +47,10 @@
     }
   }
 }
-// ./Header Top
-
-// Main Header
-
 header {
   padding: 10px 0;
-  border-bottom: 1px solid #ffffff7a;
   position: absolute;
+  background: linear-gradient(to right, #0083b0, #00b4db);
   z-index: 999;
   width: 100%;
   .navbar-brand {

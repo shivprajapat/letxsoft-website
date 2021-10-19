@@ -2,7 +2,6 @@ import React from 'react'
 import './style.css'
 function Error() {
     return (
-
         <>
             <section className="not-found-header pt-0 position-relative">
                 <div className="container">
@@ -14,7 +13,7 @@ function Error() {
                                     <h1 className="text-uppercase">Page Not Found</h1>
                                     <p className="text-dark">Sorry, We can't find the page you're looking for.</p>
                                     <div className="head-bttn">
-                                        <a href="/" className="bttn dblue">Back To Home</a>
+                                        <a href="#regin" className="bttn dblue">Back To Home</a>
                                     </div>
                                 </div>
                             </div>

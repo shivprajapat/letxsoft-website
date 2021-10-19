@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import TopBar from "./TopBar";
 export default function Header() {
@@ -10,7 +10,6 @@ export default function Header() {
         <Container>
           <Navbar expand="md">
             <Navbar.Brand>
-              {" "}
               <Link to="/">Letxsoft</Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,19 +31,10 @@ export default function Header() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="active" to="/career">
+                  <NavLink activeClassName="active" to="/service">
                       Services
                   </NavLink>
                 </li>
-                {/* <NavDropdown title="Services" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Something
-                  </NavDropdown.Item>
-                </NavDropdown> */}
                 <li>
                   <NavLink activeClassName="active" to="/contact">
                     Contact

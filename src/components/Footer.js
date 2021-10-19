@@ -13,7 +13,7 @@ export default function Footer() {
                                 <div className="footer-column col-lg-7 col-md-6 col-sm-12">
                                     <div className="footer-widget logo-widget">
                                         <div className="logo">
-                                            <a href="/">Letxsoft technology</a>
+                                            <a href="#regin">Letxsoft technology</a>
                                         </div>
                                         <div className="text">
                                             <h5>opening hours</h5>
@@ -43,31 +43,31 @@ export default function Footer() {
                                         <h5>Quick Links</h5>
                                         <ul className="list-link list-unstyled mb-0">
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight />
                                                     Who We Are
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight />
                                                     Services
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight />
                                                     Our Portfolio
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight />
                                                     Contact Us
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight />
                                                     Free Consultation
                                                 </a>
@@ -84,37 +84,37 @@ export default function Footer() {
                                         <h5>Services</h5>
                                         <ul className="list-link list-unstyled mb-0">
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> Cross Platform
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> Hybrid
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> PHP Development
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> CMS Development
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> UI/UX Design
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> PSD to WordPress
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="/">
+                                                <a href="#regin">
                                                     <FaAngleDoubleRight /> E commerce Development
                                                 </a>
                                             </li>
@@ -159,8 +159,8 @@ export default function Footer() {
                     Copyright © 2021 <b>Letxsoft Technology</b>. All Rights Reserved.
                 </div>
             </div>
-            <div className="spinning-circle-top blurs-circle"></div>
-            <div className="spinning-circle-bottom blurs-circle"></div>
+            <div className="spinning-circle-top"></div>
+            <div className="spinning-circle-bottom"></div>
 
         </footer>
     );

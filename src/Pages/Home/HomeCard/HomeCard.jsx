@@ -1,18 +1,18 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Card from "../../../components/card/Card";
+import Card from "../../../components/Card";
 import data from "./data";
 
 export default function HomeInner() {
   return (
-    <div className="home_card">
+    <section className="home_card">
         <Container>
       <Row>
         <Col lg={12} className="mx-auto">
-          <Row>
+          <Row className='justify-content-center'>
             {data.map((item, index) => {
               return (
-                <Col lg={4} md={4} key={item} className='d-flex'>
+                <Col lg={4} md={6} key={index} className='d-flex card_space'>
                   <Card {...item} />
                 </Col>
               );
@@ -21,6 +21,6 @@ export default function HomeInner() {
         </Col>
       </Row>
     </Container>
-    </div>
+    </section>
   );
 }

@@ -13,20 +13,17 @@ const TopBar = () => {
       <div className="header-top">
         <Container>
           <Row className="align-items-center">
-            <Col md={6} lg={8} className="top-header-left">
+            <Col md={6} lg={5} className="top-header-left">
               <ul>
-                {/* <li>
-                  <span>Call Us:</span>
-                </li> */}
                 <li>
-                  <span>Email us:</span>info@letxsoft.co,
+                  <span>Email us:</span>info@letxsoft.com
                 </li>
                 <li>
                   <span>address:</span>Jaipur India
                 </li>
               </ul>
             </Col>
-            <Col md={6} lg={4} className="top-header-right">
+            <Col md={6} lg={7} className="top-header-right">
               <div className="office-time">
                 <i>
                   <FaClock />

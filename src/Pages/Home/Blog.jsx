@@ -5,12 +5,11 @@ import Heading from "../../components/Heading";
 
 export default function Blog() {
   return (
-    <div className="blog">
+    <section className="blog">
       <Container>
-      <Heading heading="WE PROVIDE BETTER
-" top_heading="SERVICES" />
+        <Heading heading="WE PROVIDE BETTER" top_heading="SERVICES" />
         <Row>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className='d-flex'>
             <div className="blog_sec">
               <div className="blog_sec_img">
                 <img src={require("../../images/mobileapp.jpg").default} alt="" />
@@ -19,7 +18,7 @@ export default function Blog() {
                 <div className="blog_sec_content_meta">
                   <ul>
                     <li>
-                      <a href="/" className="posted-by">
+                      <a href="#regin" className="posted-by">
                         <span>
                           <FaUserFriends />
                         </span>
@@ -27,7 +26,7 @@ export default function Blog() {
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="posted-on">
+                      <a href="#regin" className="posted-on">
                         <span>
                           <FaRegCalendarAlt />
                         </span>
@@ -44,7 +43,7 @@ export default function Blog() {
                     code) your app in whatever form you need. Our award winning
                     apps make businesses more productive and cost efficient.
                   </p>
-                  <a href="/" className="btn_link">
+                  <a href="#regin" className="btn_link">
                     <span>
                       <FaPlus />
                     </span>
@@ -54,7 +53,7 @@ export default function Blog() {
               </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className='d-flex'>
             <div className="blog_sec">
               <div className="blog_sec_img">
                 <img src={require("../../images/web-development.jpg").default} alt="" />
@@ -63,7 +62,7 @@ export default function Blog() {
                 <div className="blog_sec_content_meta">
                   <ul>
                     <li>
-                      <a href="/" className="posted-by">
+                      <a href="#regin" className="posted-by">
                         <span>
                           <FaUserFriends />
                         </span>
@@ -71,7 +70,7 @@ export default function Blog() {
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="posted-on">
+                      <a href="#regin" className="posted-on">
                         <span>
                           <FaRegCalendarAlt />
                         </span>
@@ -89,7 +88,7 @@ export default function Blog() {
                     sites that feature user-friendly design and clear
                     navigation.
                   </p>
-                  <a href="/" className="btn_link">
+                  <a href="#regin" className="btn_link">
                     <span>
                       <FaPlus />
                     </span>
@@ -99,7 +98,7 @@ export default function Blog() {
               </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className='d-flex'>
             <div className="blog_sec">
               <div className="blog_sec_img">
                 <img src={require("../../images/ecommerce.jpg").default} alt="" />
@@ -108,7 +107,7 @@ export default function Blog() {
                 <div className="blog_sec_content_meta">
                   <ul>
                     <li>
-                      <a href="/" className="posted-by">
+                      <a href="#regin" className="posted-by">
                         <span>
                           <FaUserFriends />
                         </span>
@@ -116,7 +115,7 @@ export default function Blog() {
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="posted-on">
+                      <a href="#regin" className="posted-on">
                         <span>
                           <FaRegCalendarAlt />
                         </span>
@@ -132,7 +131,7 @@ export default function Blog() {
                     solutions. We are certified developers of world-renowned
                     platforms such as Magento, PrestaShop and WooCommerce
                   </p>
-                  <a href="/" className="btn_link">
+                  <a href="#regin" className="btn_link">
                     <span>
                       <FaPlus />
                     </span>
@@ -142,7 +141,7 @@ export default function Blog() {
               </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} className='d-flex'>
             <div className="blog_sec">
               <div className="blog_sec_img">
                 <img src={require("../../images/digital transform.jpg").default} alt="" />
@@ -151,7 +150,7 @@ export default function Blog() {
                 <div className="blog_sec_content_meta">
                   <ul>
                     <li>
-                      <a href="/" className="posted-by">
+                      <a href="#regin" className="posted-by">
                         <span>
                           <FaUserFriends />
                         </span>
@@ -159,7 +158,7 @@ export default function Blog() {
                       </a>
                     </li>
                     <li>
-                      <a href="/" className="posted-on">
+                      <a href="#regin" className="posted-on">
                         <span>
                           <FaRegCalendarAlt />
                         </span>
@@ -175,7 +174,7 @@ export default function Blog() {
                     at least a month and prefer to hire on a loan basis rather
                     than as permanent employees,
                   </p>
-                  <a href="/" className="btn_link">
+                  <a href="#regin" className="btn_link">
                     <span>
                       <FaPlus />
                     </span>
@@ -187,6 +186,6 @@ export default function Blog() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }
