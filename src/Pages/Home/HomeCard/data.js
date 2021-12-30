@@ -7,7 +7,7 @@ const data = [
     list1: "ReactNative developer",
     list2: "Android / IOS developer",
     list3: "Full stack developer",
-    list4: "PHP/Python developer"
+    list4: "PHP/Python developer",
   },
   {
     icon: <FaHandsHelping />,
@@ -16,7 +16,7 @@ const data = [
     list1: "Android application",
     list2: "ReactNative application",
     list3: "Desktop application",
-    list4: "Web application"
+    list4: "Web application",
   },
   {
     icon: <FaUsersCog />,
@@ -25,7 +25,7 @@ const data = [
     list1: "Laravel / cake websites",
     list2: "ReactJs / Angular webapps",
     list3: "Wordpress websites",
-    list4: "",
+    list4: "seo websites",
   },
 ];
 

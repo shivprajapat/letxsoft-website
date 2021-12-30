@@ -1,5 +1,5 @@
 .header-top {
-  background: #00B4DB;
+  background: #00b4db;
   padding: 14px 0;
   ul {
     padding: 0;
@@ -53,6 +53,19 @@ header {
   background: linear-gradient(to right, #0083b0, #00b4db);
   z-index: 999;
   width: 100%;
+  transition: all 0.5s ease;
+  &.active {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px #ddd;
+    top: 0;
+    .navbar-brand a,
+    .navbar-nav li a {
+      color: #2fb4db !important;
+    }
+  }
+  &.innerheader{position: fixed;top: 0;}
   .navbar-brand {
     a {
       padding: 0;
@@ -62,10 +75,12 @@ header {
       font-weight: 600;
     }
   }
-  .navbar-toggler{background-color: $white;}
-  
+  .navbar-toggler {
+    background-color: $white;
+  }
+
   .navbar-nav {
-      .nav-item,
+    .nav-item,
     li {
       list-style: none;
       display: inline-block;

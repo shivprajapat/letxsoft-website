@@ -2,10 +2,11 @@
   position: relative;
   padding: 0;
   &_sec {
-    .heading_tab{
-margin-bottom: 20px;
+    .heading_tab {
+      margin-left: 0;
+      margin-bottom: 20px;
     }
-      .about_txt {
+    .about_txt {
       margin-bottom: 40px;
     }
   }

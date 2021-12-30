@@ -1,23 +1,14 @@
-import React from 'react'
+import React from "react";
 
-export default function TestimonialItem({name,hashtag,desc,img}) {
-    return (
-        <div className="testimonial_tab">
-                    <div className="d-flex align-items-center testimonial_tab_item">
-                        <div className="testimonial_tab_img">
-                            <img
-                                src={img}
-                                alt=""
-                            />
-                        </div>
-                        <div className='testimonial_tab_info'>
-                            <p>{name}</p>
-                            <span>{hashtag}</span>
-                        </div>
-                    </div>
-                    <div className='desc'>
-
-<p>{desc}</p>                     </div>
-                </div>
-    )
+export default function TestimonialItem({ name, hashtag, desc, img }) {
+  return (
+    <div className="testimonial_tab">
+      <p>{desc}</p>
+      <h3>{name}</h3>
+      <span>{hashtag}</span>
+      <div className="client-img">
+        <img src={img} className="review-img back-img" alt="" />
+      </div>
+    </div>
+  );
 }

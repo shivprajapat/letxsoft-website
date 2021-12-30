@@ -1,45 +1,81 @@
 .testimonial {
   position: relative;
-  padding-bottom: 70px;
-  .heading_tab{
-    text-align: center;
+  .heading_tab {
+    margin: 0 0 30px 0;
   }
+  &_content {
+    .sub-title {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &_slider {
+    position: relative;
+    margin-bottom: 40px;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      width: calc(100% - 44px);
+      height: 100%;
+      border-radius: 4px;
+      border: solid 2px $aqua;
+      opacity: 0.4;
+      z-index: 0;
+    }
+    &:after {
+      top: 40px;
+      width: calc(100% - 84px);
+    }
+    &_box {
+      width: 100%;
+      height: auto;
+      background: $white;
+      border-radius: 4px;
+      border: solid 2px transparent;
+      background-image: linear-gradient($white, $white),
+        radial-gradient(circle at bottom, $aqua, #2fb4db);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      position: relative;
+      box-shadow: 2px 2px 60px #2fb4db26;
+      z-index: 1;
+    }
+  }
+
   &_tab {
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #00968814;
-    cursor: pointer;
-    transition: transform 0.5s;
-    &_item {
-      margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 33px 40px 40px 40px;
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 16px;
     }
-    &_img img {
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      margin-right: 10px;
+    h3 {
+      margin-bottom: 0;
     }
-    &_info {
-      p {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        color: $aqua;
+    span {
+      font-size: 15px;
+      line-height: 28px;
+      color: $aqua;
+      text-transform: uppercase;
+      display: block;
+    }
+    .client-img {
+      padding-top: 11px;
+      .review-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 auto;
       }
-      span {
-        font-weight: 600;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-      }
     }
-    .desc{
-        p{
-        font-size: 13px;
-        margin: 0;
-        padding: 5px;
-    }}
   }
-  .slick-slide {
-    margin: 0px 9px;
-    width: 352px !important;
-}
 }

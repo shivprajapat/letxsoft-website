@@ -4,22 +4,20 @@
   top: -100px;
   z-index: 99;
   .home-item {
-    box-shadow: 0px 5px 15px 0px #0000001a;
-    padding: 20px;
-    background-color: #ffffff;
+    box-shadow: 0px 0px 30px 30px #00000012;
+    padding: 35px 40px 37px 40px;
+    background-color: $white;
     border-radius: 5px;
-    text-align: center;
-    transition: all 0.5s ease;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+      box-shadow 0.3s;
     &:hover {
-      background-color: #2fb4db;
-      transform: translateY(-10px);
-      color: #fff;
-      margin-top: -10px;
+      background-color: $aqua;
+      color: $white;
     }
     &:hover .icon i,
     &:hover h3,
     &:hover li {
-      color: #fff !important;
+      color: $white !important;
     }
     .icon {
       margin-bottom: 20px;
@@ -39,17 +37,31 @@
       transition: all 0.5s ease;
     }
     .checklist {
-      padding: 0;    max-width: 250px;
-      margin-left: auto;
+      padding: 0;
+      margin: 0;
       li {
         font-size: 16px;
-        line-height: 26px;
+        line-height: 30px;
         color: #555555;
         margin: 0;
         transition: all 0.5s ease;
         font-weight: 400;
         text-align: left;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
       }
+    }
+    button {
+      position: absolute;
+      bottom: -24px;
+      border-radius: 100%;
+      background: $white;
+      color: #222222;
+      border: 1px solid #e8e8e8;
+      width: 50px;
+      height: 50px;
     }
   }
 }

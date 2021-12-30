@@ -1,18 +1,21 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import InnerBanner from '../../components/InnerBanner'
-
+import React from "react";
+import InnerBanner from "../../components/InnerBanner";
+import OpenPositions from "./OpenPositions";
+import Working from "./Working";
+import OurOffice from "./OurOffice";
+import InnerHeader from '../../components/Header/InnerHeader'
 const Career = () => {
-    return (
-        <React.Fragment>
-            <InnerBanner heading="Career" />
-            <div id='career' className='section_padding'>
-            <Container>
+  return (
+    <React.Fragment>
+      <InnerHeader/>
+      <InnerBanner heading="Career" />
+      <div id="career" className="section_padding">
+        <Working />
+        <OurOffice />
+        <OpenPositions />
+      </div>
+    </React.Fragment>
+  );
+};
 
-            </Container>
-        </div>
-        </React.Fragment>
-    )
-}
-
-export default Career
+export default Career;

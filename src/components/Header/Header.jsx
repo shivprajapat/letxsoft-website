@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import TopBar from "./TopBar";
 export default function Header() {
+  const [header, setHeader] = useState(false);
+  const sticky_header = () => {
+    if (window.scrollY >= 90) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
+
+  window.addEventListener("scroll", sticky_header);
+
   return (
     <React.Fragment>
       <TopBar />
-      <header>
+      <header className={header ? "active " : ""}>
         <Container>
-          <Navbar expand="md">
+          <Navbar expand="lg">
             <Navbar.Brand>
               <Link to="/">Letxsoft</Link>
             </Navbar.Brand>
@@ -32,7 +43,7 @@ export default function Header() {
                 </li>
                 <li>
                   <NavLink activeClassName="active" to="/service">
-                      Services
+                    Services
                   </NavLink>
                 </li>
                 <li>
