@@ -11,16 +11,11 @@ export default function About() {
               <Heading heading="about" top_heading="About" />
               <div className="about_txt">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia numquam autem expedita accusamus possimus quas dolorem
-                  eos, eaque, fuga vel magni fugiat corporis laudantium! In
-                  illum quisquam ad eius voluptatibus.
-                </p>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officia numquam autem expedita accusamus possimus quas dolorem
-                  eos, eaque, fuga vel magni fugiat corporis laudantium! In
-                  illum quisquam ad eius voluptatibus.
+                  Letxsoft Technology is one of the well-known leaders in the
+                  technology revolution and provides complete IT solutions since
+                  2016. The company provides the best services in Mobile
+                  application, Website development, Designing & Digital
+                  marketing. We are a team of highly professional experts.{" "}
                 </p>
               </div>
               <div className="btn-block">

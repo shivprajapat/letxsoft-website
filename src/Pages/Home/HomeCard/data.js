@@ -1,17 +1,19 @@
-import { FaUsersCog, FaHandsHelping } from "react-icons/fa";
+import { FaShieldAlt, FaMobileAlt } from "react-icons/fa";
+import { IoDesktopSharp } from "react-icons/io5";
+
 const data = [
   {
-    icon: <FaUsersCog />,
+    icon: <FaShieldAlt />,
     title: "dedicated developers",
-    list: "MEAN / MERN stack",
-    list1: "ReactNative developer",
-    list2: "Android / IOS developer",
-    list3: "Full stack developer",
-    list4: "PHP/Python developer",
+    list: "Communication skills",
+    list1: "Interpersonal skills",
+    list2: "Problem solving skills",
+    list3: "Punctuality",
+    list4: "Critical thinking skills",
   },
   {
-    icon: <FaHandsHelping />,
-    title: "Applications",
+    icon: <FaMobileAlt />,
+    title: "mobile-apps",
     list: "IOS application",
     list1: "Android application",
     list2: "ReactNative application",
@@ -19,7 +21,7 @@ const data = [
     list4: "Web application",
   },
   {
-    icon: <FaUsersCog />,
+    icon: <IoDesktopSharp />,
     title: "web-Development",
     list: "E-commerce (Prestashop / Magento / Shopify)",
     list1: "Laravel / cake websites",

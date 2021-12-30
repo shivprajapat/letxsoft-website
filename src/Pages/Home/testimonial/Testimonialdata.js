@@ -1,4 +1,6 @@
-import testimonial1 from "../../../images/testimonial/testimonial-1.jpg";
+import testimonial1 from "../../../images/testimonial/client1.jpg";
+import testimonial2 from "../../../images/testimonial/client2.jpg";
+import testimonial3 from "../../../images/testimonial/client3.jpg";
 const Testimonialdata = [
   {
     name: "kristina",
@@ -8,20 +10,14 @@ const Testimonialdata = [
   },
   {
     name: "kevin",
-    img: testimonial1,
+    img: testimonial2,
     desc: "letxsoft did a fantastic job and I would highly recommend letxsoft. I will be using him for any future modifications that I may have.",
     hashtag: "@kevinpeterson",
   },
   {
     name: "ben",
-    img: testimonial1,
-    desc: "will definitely work with letxsoft again. Communicates clearly and updates on the project regularly .we are very glad to have you in our project.",
-    hashtag: "@bensigham",
-  },
-  {
-    name: "ben",
-    img: testimonial1,
-    desc: "will definitely work with letxsoft again. Communicates clearly and updates on the project regularly .we are very glad to have you in our project.",
+    img: testimonial3,
+    desc: "will definitely work with letxsoft again. Communicates clearly and updates on the project regularly .we are very glad to have you in our project",
     hashtag: "@bensigham",
   },
 ];

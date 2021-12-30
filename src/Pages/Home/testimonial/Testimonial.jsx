@@ -34,14 +34,13 @@ export default function Testimonial() {
         <Row>
           <Col lg={6}>
             <div className="testimonial_content text-left">
-              <Heading
-                heading="See What Our Clients Say’s"
-                top_heading="TESTIMONIAL"
-              />
+              <Heading heading="What Client Say" top_heading="TESTIMONIAL" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque maxime accusantium velit sapiente vel minus labore
-                voluptatum exercitationem, molestiae harum!
+                We take great pride in offering amazing service to our clients
+                and this is how many of our clients have built wonderful
+                partnerships with us, and we are grateful for that. Take a look
+                at what our clients have to say about their experiences working
+                with us.
               </p>
             </div>
           </Col>

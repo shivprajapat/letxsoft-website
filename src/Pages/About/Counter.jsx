@@ -6,11 +6,11 @@ import CountUp from "react-countup";
 
 const Counter = () => {
   return (
-    <section class="counter_section section_padding">
+    <section className="counter_section section_padding">
       <Container>
-        <Row class="text-center">
+        <Row className="text-center">
           <Col lg={3} sm={6}>
-            <div class="counter">
+            <div className="counter">
               <i>
                 <FaUserAlt />
               </i>
@@ -20,32 +20,32 @@ const Counter = () => {
           </Col>
 
           <Col lg={3} sm={6}>
-            <div class="counter">
+            <div className="counter">
               <i>
                 <FaFileSignature />
               </i>
               <CountUp end={540} duration={2.75} />{" "}
-              <p class="count-text ">Projects</p>
+              <p className="count-text ">Projects</p>
             </div>
           </Col>
 
           <Col lg={3} sm={6}>
-            <div class="counter">
+            <div className="counter">
               <i>
                 <BsBarChartFill />
               </i>
               <CountUp end={30} duration={2.75} />
-              <p class="count-text ">Skilled Techies</p>
+              <p className="count-text ">Skilled Techies</p>
             </div>
           </Col>
 
           <Col lg={3} sm={6}>
-            <div class="counter">
+            <div className="counter">
               <i>
                 <BiPlanet />
               </i>
               <CountUp end={12} duration={2.75} />
-              <p class="count-text ">Years of Experience</p>
+              <p className="count-text ">Years of Experience</p>
             </div>
           </Col>
         </Row>
