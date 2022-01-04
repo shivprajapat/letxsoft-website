@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 const HomeBanner = () => {
   return (
     <section className="home" id="home">
@@ -16,14 +18,12 @@ const HomeBanner = () => {
               <h1>software development company in india</h1>
               <p>build for smart future</p>
               <div className="btn-block">
-                <a href="#regin" className="home_btn">
-                  {" "}
+                <Link to="/service" className="home_btn">
                   our work
-                </a>
-                <a href="#regin" className="home_btn">
-                  {" "}
+                </Link>
+                <Link to="/contact" className="home_btn">
                   contact us
-                </a>
+                </Link>
               </div>
             </div>
           </Col>

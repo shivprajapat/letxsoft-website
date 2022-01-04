@@ -60,10 +60,25 @@
     padding-top: 40px;
     margin: auto;
   }
+
+  .career_details_section {
+    .detail_form_tab {
+      margin-top: 20px;
+    }
+  }
 }
 @media (max-width: 767px) {
   h1 {
     font-size: 35px !important;
+  }
+  .career_details_section {
+    .ur-detail-btn,
+    .detail_desc .ur-detail-box {
+      text-align: center;
+      .ur-img {
+        margin: 0 auto;
+      }
+    }
   }
   .top-header-left {
     display: none;
@@ -140,7 +155,7 @@
     margin-top: 40px;
   }
   .card_space {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .services-section {
     padding: 40px 0;

@@ -19,7 +19,7 @@ const Working = () => {
                 const { title, description, img } = work;
 
                 return (
-                  <div className="column">
+                  <div className="column" key={index}>
                     <div className="icon mb-3 mb-md-0">
                       <img className="img-fluid" src={img} alt="Office" />
                     </div>

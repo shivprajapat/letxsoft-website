@@ -3,13 +3,13 @@ import InnerBanner from "../../components/InnerBanner";
 import OpenPositions from "./OpenPositions";
 import Working from "./Working";
 import OurOffice from "./OurOffice";
-import InnerHeader from '../../components/Header/InnerHeader'
+import InnerHeader from "../../components/Header/InnerHeader";
 const Career = () => {
   return (
     <React.Fragment>
-      <InnerHeader/>
+      <InnerHeader />
       <InnerBanner heading="Career" />
-      <div id="career" className="section_padding">
+      <div id="career">
         <Working />
         <OurOffice />
         <OpenPositions />

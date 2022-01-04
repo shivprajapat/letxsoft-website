@@ -12,7 +12,7 @@ export default function Blog() {
         <Heading heading="WE PROVIDE BETTER" top_heading="Blog" />
         <Row className="justify-content-center">
           {Blogdata.map((blogitem, index) => {
-            const { title, img, desc, date } = blogitem;
+            const { title, animation, img, desc, date } = blogitem;
             return (
               <Col
                 lg={4}
@@ -20,6 +20,8 @@ export default function Blog() {
                 sm={12}
                 className="align-items-stretch"
                 key={index}
+                data-aos={animation}
+                data-aos-duration="1000"
               >
                 <div className="blog_sec">
                   <div className="blog_sec_img">

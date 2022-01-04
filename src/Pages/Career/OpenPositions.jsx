@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { OpenPositionsData } from "./data";
 const OpenPositions = () => {
   return (
@@ -33,9 +34,9 @@ const OpenPositions = () => {
                     </Col>
                     <Col lg={3} md={4}>
                       <div className="apply-now text-md-right">
-                        <a className="apply-now-btn" href="/">
+                        <Link className="apply-now-btn" to="/career-details">
                           Apply Now
-                        </a>
+                        </Link>
                       </div>
                     </Col>
                   </Row>

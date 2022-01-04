@@ -30,14 +30,14 @@
       a {
         font-size: 25px;
         text-transform: capitalize;
-        color: #fff !important;
+        color: $white !important;
         text-decoration: none;
         font-weight: 600;
       }
     }
     .text {
       position: relative;
-      color: #ffffff;
+      color: $white;
       margin-bottom: 25px;
       font-size: 16px;
       line-height: 24px;
@@ -58,7 +58,7 @@
           text-align: center;
           line-height: 40px;
           display: inline-block;
-          background-color: #ffffff;
+          background-color: $white;
           -webkit-transition: all 300ms ease;
           -ms-transition: all 300ms ease;
           -o-transition: all 300ms ease;
@@ -69,7 +69,7 @@
             height: 20px;
             fill: #2fb4db;
           }
-                }
+        }
       }
     }
   }
@@ -78,7 +78,7 @@
     z-index: 1;
     h5 {
       position: relative;
-      color: #ffffff;
+      color: $white;
       font-weight: 500;
       line-height: 1.2em;
       margin-bottom: 10px;
@@ -91,14 +91,14 @@
         bottom: 0px;
         height: 1px;
         width: 30px;
-        background-color: #ffffff;
+        background-color: $white;
       }
     }
     .list-link li {
       line-height: 30px;
       a {
         position: relative !important;
-        color: #ffffff;
+        color: $white;
         font-size: 15px;
         -webkit-transition: all 300ms ease;
         -ms-transition: all 300ms ease;
@@ -108,84 +108,83 @@
         svg {
           margin-right: 5px;
         }
-           }
+      }
     }
   }
-.contact-widget{
+  .contact-widget {
     ul li {
-    position: relative;
-    color: #ffffff;
-    font-size: 16px;
-    padding-left: 50px;
-    margin-bottom: 28px;
-    line-height: 1.6em;
-    a {
-      color: #fff;
-      text-transform: capitalize;
-    }
-    .icon {
-      position: absolute;
-      left: 0px;
-      top: 4px;
-      font-size: 35px;
-      line-height: 1em;
-      color: #ffffff;
-    }
-    strong {
       position: relative;
-      display: block;
-      font-weight: normal;
+      color: $white;
+      font-size: 16px;
+      padding-left: 50px;
+      margin-bottom: 28px;
+      line-height: 1.6em;
+      a {
+        color: $white;
+        text-transform: capitalize;
+      }
+      .icon {
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        font-size: 35px;
+        line-height: 1em;
+        color: $white;
+      }
+      strong {
+        position: relative;
+        display: block;
+        font-weight: normal;
+      }
     }
   }
-}
-.footer-bottom {
-  position: relative;
-  padding: 20px 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  .copyright {
+  .footer-bottom {
     position: relative;
-    color: #ffffff;
-    font-size: 16px;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    .copyright {
+      position: relative;
+      color: $white;
+      font-size: 16px;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url(../../images/map-shape.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.05;
+  }
+  .spinning-circle-top {
+    width: 530px;
+    height: 530px;
+    top: -52%;
+    left: -3%;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px dashed #2fb4db;
+    animation: rotated 35s infinite linear;
+    overflow: hidden;
+  }
+  .spinning-circle-bottom {
+    width: 350px;
+    overflow: hidden;
+    height: 350px;
+    right: -4%;
+    bottom: -30%;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px dashed #2fb4db;
+    animation: rotated 35s infinite linear;
   }
 }
-&:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: url(../../images/map-shape.png) center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  opacity: 0.05;
-}
-.spinning-circle-top {
-  width: 530px;
-  height: 530px;
-  top: -52%;
-  left: -3%;
-  position: absolute;
-  display: inline-block;
-  border-radius: 50%;
-  border: 2px dashed #2fb4db;
-  animation: rotated 35s infinite linear;
-  overflow: hidden;
-}
-.spinning-circle-bottom {
-  width: 350px;
-  overflow: hidden;
-  height: 350px;
-  right: -4%;
-  bottom: -30%;
-  position: absolute;
-  display: inline-block;
-  border-radius: 50%;
-  border: 2px dashed #2fb4db;
-  animation: rotated 35s infinite linear;
-}
-}
-
 
 @-webkit-keyframes rotated {
   0% {

@@ -32,7 +32,7 @@ export default function Testimonial() {
     <section className="testimonial section_padding">
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} data-aos="zoom-in-right" data-aos-duration="1000">
             <div className="testimonial_content text-left">
               <Heading heading="What Client Say" top_heading="TESTIMONIAL" />
               <p>
@@ -44,7 +44,7 @@ export default function Testimonial() {
               </p>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} data-aos="zoom-in-left" data-aos-duration="1000">
             <div className="testimonial_slider">
               <div className="testimonial_slider_box">
                 <Slider {...client}>

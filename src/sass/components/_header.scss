@@ -55,7 +55,7 @@ header {
   width: 100%;
   transition: all 0.5s ease;
   &.active {
-    background: #fff;
+    background: $white;
     position: fixed;
     width: 100%;
     box-shadow: 0 0 10px #ddd;
@@ -65,12 +65,15 @@ header {
       color: #2fb4db !important;
     }
   }
-  &.innerheader{position: fixed;top: 0;}
+  &.innerheader {
+    position: fixed;
+    top: 0;
+  }
   .navbar-brand {
     a {
       padding: 0;
       margin: 0;
-      color: #fff;
+      color: $white;
       font-size: 26px;
       font-weight: 600;
     }
@@ -93,7 +96,7 @@ header {
       .basic-nav-dropdown,
       a {
         padding: 0;
-        color: #fff !important;
+        color: $white !important;
         font-weight: 600;
         font-size: 16px;
       }

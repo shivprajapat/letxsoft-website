@@ -3,10 +3,12 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About/About";
 import Services from "./Pages/Services/Services";
-import Career from './Pages/Career/Career';
-import Contact from './Pages/Contact/Contact';
+import Career from "./Pages/Career/Career";
+import Contact from "./Pages/Contact/Contact";
 
-import Error from './components/404Page/Error'
+import Error from "./components/404Page/Error";
+import CareerDetails from "./Pages/Career/CareerDetails";
+import ThankYou from "./components/ThankYou";
 const Routes = () => {
   return (
     <Switch>
@@ -15,6 +17,8 @@ const Routes = () => {
       <Route path="/service" component={Services} />
       <Route path="/career" component={Career} />
       <Route path="/contact" component={Contact} />
+      <Route path="/career-details" component={CareerDetails} />
+      <Route path="/thank-you" component={ThankYou} />
       <Route path="*" component={Error} />
     </Switch>
   );
