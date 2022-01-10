@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact/Contact";
 import Error from "./components/404Page/Error";
 import CareerDetails from "./Pages/Career/CareerDetails";
 import ThankYou from "./components/ThankYou";
+import Dashborad from "./DashBorad/DashBorad";
 const Routes = () => {
   return (
     <Switch>
@@ -19,6 +20,7 @@ const Routes = () => {
       <Route path="/contact" component={Contact} />
       <Route path="/career-details" component={CareerDetails} />
       <Route path="/thank-you" component={ThankYou} />
+      <Route path="/" component={Dashborad} />
       <Route path="*" component={Error} />
     </Switch>
   );

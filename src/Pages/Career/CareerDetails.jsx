@@ -1,11 +1,12 @@
 import React from "react";
 import InnerBanner from "../../components/InnerBanner";
 import InnerHeader from "../../components/Header/InnerHeader";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 import jobIcon from "../../images/icons/job_image-main.svg";
 import { Link } from "react-router-dom";
+import CareerForm from "../../components/CareerForm";
 const CareerDetails = () => {
   const experienceData = [
     {
@@ -112,41 +113,7 @@ const CareerDetails = () => {
             </div>
           </Col>
           <Col col={12} lg={4} className="detail_form_tab">
-            <div className="detail_form">
-              <div className="detail_form_header">
-                <h6>Get In Touch</h6>
-              </div>
-              <Form>
-                <Form.Group className="mb-3">
-                  <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Contact Number</Form.Label>
-                  <Form.Control type="text" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>CTC</Form.Label>
-                  <Form.Control type="text" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                  <Form.Control type="file" name="file" />
-                </Form.Group>
-                <Form.Group>
-                  <Link to="/thank-you">
-                    <button className="btn-gray">Send</button>
-                  </Link>
-                </Form.Group>
-              </Form>
-            </div>
+            <CareerForm/>
           </Col>
         </Row>
       </Container>

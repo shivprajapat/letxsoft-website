@@ -5,7 +5,7 @@ import Heading from "../../../components/Heading";
 
 import { Blogdata } from "./data";
 export default function Blog() {
-  const [readMore, setReadMore] = useState(false);
+  const readMore = useState(false);
   return (
     <section className="blog section_padding">
       <Container>
