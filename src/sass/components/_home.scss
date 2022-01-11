@@ -1,8 +1,8 @@
 .home {
-  background: -webkit-linear-gradient(to right, #0083b0, #00b4db);
-  background: linear-gradient(to right, #0083b0, #00b4db);
+  background: -webkit-linear-gradient(to right, $aquapuar, $aquapuar);
+  background: linear-gradient(to right, $aquapuar, $aquapuar);
 
-  @include flexCenter;
+  @include flex(center, center, null);
   padding: 200px 0 200px;
   z-index: 1;
 
@@ -15,11 +15,12 @@
   &_content {
     max-width: 450px;
     h1 {
-      font-size: 50px;
+      font-size: 42px;
       color: $white;
       font-weight: 700;
       line-height: 60px;
       margin: 0;
+      font-family: var(--font_rr);
       text-transform: capitalize;
     }
     p {
@@ -28,7 +29,7 @@
       font-size: 20px;
       margin: 20px 0;
       line-height: 28px;
-      font-weight: 400;
+      font-family: var(--font_rm);
     }
   }
   &_img {
@@ -51,7 +52,7 @@
     border: 2px solid transparent;
     transition: all 0.1s linear;
     font-weight: 600;
-    margin-right:10px;
+    margin-right: 10px;
     &:hover {
       background-color: transparent;
       color: $white;

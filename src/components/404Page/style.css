@@ -32,7 +32,7 @@
     height: 250px;
     z-index: 9;
 }
-.not-found-header .text-effect:before, 
+.not-found-header .text-effect:before,
 .not-found-header .text-effect:after {
     content: attr(data-tip);
     color: #00b4db;
@@ -103,7 +103,8 @@
     margin-top: 30px;
 }
 
-.not-found-header .dot1, .not-found-header .dot4 {
+.not-found-header .dot1,
+.not-found-header .dot4 {
     background-color: #343791;
 }
 .background-shapes .dot1 {
@@ -120,7 +121,7 @@
     position: absolute;
     width: 8px;
     height: 8px;
-    background-color: #00C899;
+    background-color: #00c899;
     top: 18%;
     right: 4%;
     z-index: 1;
@@ -131,7 +132,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    border: 3px solid #00C899;
+    border: 3px solid #00c899;
     top: 16%;
     left: 52%;
     z-index: 1;
@@ -158,11 +159,12 @@
     border-radius: 50px;
     display: inline-block;
 }
-.not-found-header .box1, .not-found-header .box3 {
+.not-found-header .box1,
+.not-found-header .box3 {
     border-color: #343791;
 }
-.heart1{
-    border-color: #00C899;
+.heart1 {
+    border-color: #00c899;
 }
 .background-shapes .heart1 {
     position: absolute;
@@ -170,8 +172,8 @@
     left: 17%;
     width: 20px;
     height: 20px;
-    border: 3px solid #00C899;
-    border-radius:.35rem .35rem .35rem  0;
+    border: 3px solid #00c899;
+    border-radius: 0.35rem 0.35rem 0.35rem 0;
     background-color: transparent;
     z-index: 1;
     -webkit-animation: box-shape linear 5s infinite;
@@ -184,13 +186,13 @@
     width: 20px;
     height: 20px;
     border: 3px solid #343791;
-    border-radius: .35rem;
+    border-radius: 0.35rem;
     background-color: transparent;
     z-index: 1;
     -webkit-animation: box-shape linear 5s infinite;
     animation: box-shape linear 5s infinite;
 }
-@keyframes box-shape{
+@keyframes box-shape {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -207,16 +209,15 @@
     width: 20px;
     height: 20px;
     border: 3px solid #f3ba19;
-    border-radius: .35rem;
+    border-radius: 0.35rem;
     background-color: transparent;
     z-index: 1;
     -webkit-animation: box-shape linear 9s infinite;
     animation: box-shape linear 9s infinite;
 }
 
-
-@media (max-width: 576px){
-    .not-found-header .text-effect{
+@media (max-width: 576px) {
+    .not-found-header .text-effect {
         font-size: 11rem;
     }
     .not-found-header .head-txt h1 {

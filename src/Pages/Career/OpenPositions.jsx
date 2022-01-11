@@ -1,13 +1,14 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Heading from "../../components/Heading";
 import { OpenPositionsData } from "./data";
 const OpenPositions = () => {
   return (
     <section className="open-positions section_padding">
       <Container>
         <Row className="justify-content-center">
-          <h2>Open Positions</h2>
+          <Heading heading="Open Positions" />
         </Row>
         <Row className="justify-content-center">
           <Col md={10}>

@@ -171,7 +171,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom text-center">
         <div className="copyright">
-          Copyright © 2021 <b>Letxsoft Technology</b>. All Rights Reserved.
+          Copyright © 2021 <a href="/">Letxsoft Technology</a>. All Rights Reserved.
         </div>
       </div>
       <div className="spinning-circle-top"></div>

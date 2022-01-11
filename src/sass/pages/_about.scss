@@ -6,12 +6,13 @@
     font-size: 15px;
     line-height: 26px;
     text-align: justify;
+    font-family: var(--font_rr);
   }
 }
 
 .counter_section {
   position: relative;
-  background: #f3f3f4;
+  background: $white334;
   &:before {
     content: "";
     position: absolute;
@@ -24,17 +25,13 @@
   .counter {
     background: $white;
     padding: 30px;
-    box-shadow: #0000001a 0px 20px 25px -5px, #0000000a 0px 10px 10px -5px;
+    box-shadow: $lightblack 0px 20px 25px -5px, $lightblack 0px 10px 10px -5px;
     transition: 0.5s;
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    flex-direction: column;
+    @include flex(center, center, column);
+
     margin: 0 auto;
     -ms-flex-pack: center;
     justify-content: center;
@@ -54,6 +51,8 @@
       font-size: 35px;
       margin: 0px;
       padding-top: 10px;
+      font-weight: 600;
+      font-family: var(--font_rr);
     }
     i {
       font-size: 40px;

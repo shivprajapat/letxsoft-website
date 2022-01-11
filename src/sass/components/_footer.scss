@@ -2,21 +2,9 @@
 .main-footer {
   position: relative;
   padding: 60px 0px 0px;
-  background: -webkit-radial-gradient(
-    circle farthest-corner at center center,
-    #2fb4db 0%,
-    #1c2d5a 100%
-  );
-  background: -moz-radial-gradient(
-    circle farthest-corner at center center,
-    #2fb4db 0%,
-    #1c2d5a 100%
-  );
-  background: radial-gradient(
-    circle farthest-corner at center center,
-    #2fb4db 0%,
-    #1c2d5a 100%
-  );
+  background: -webkit-radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
+  background: radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
   overflow: hidden;
   .widgets-section {
     position: relative;
@@ -32,7 +20,8 @@
         text-transform: capitalize;
         color: $white !important;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: var(--font_kr);
       }
     }
     .text {
@@ -67,7 +56,7 @@
           svg {
             width: 20px;
             height: 20px;
-            fill: #2fb4db;
+            fill: $aqua;
           }
         }
       }
@@ -79,11 +68,13 @@
     h5 {
       position: relative;
       color: $white;
-      font-weight: 500;
       line-height: 1.2em;
       margin-bottom: 10px;
       padding-bottom: 20px;
       text-transform: uppercase;
+      font-weight: 600;
+      font-family: var(--font_rr);
+
       &:before {
         position: absolute;
         content: "";
@@ -96,15 +87,17 @@
     }
     .list-link li {
       line-height: 30px;
+
       a {
         position: relative !important;
         color: $white;
         font-size: 15px;
-        -webkit-transition: all 300ms ease;
-        -ms-transition: all 300ms ease;
-        -o-transition: all 300ms ease;
-        -moz-transition: all 300ms ease;
-        transition: all 300ms ease;
+        font-weight: 500;
+        font-family: var(--font_rm);
+        @include Transition(0.3s);
+        &:hover {
+          color: $black;
+        }
         svg {
           margin-right: 5px;
         }
@@ -121,6 +114,7 @@
       line-height: 1.6em;
       a {
         color: $white;
+        font-family: var(--font_rr);
         text-transform: capitalize;
       }
       .icon {
@@ -135,6 +129,8 @@
         position: relative;
         display: block;
         font-weight: normal;
+        font-family: var(--font_rr);
+        font-weight: 600;
       }
     }
   }
@@ -146,6 +142,13 @@
       position: relative;
       color: $white;
       font-size: 16px;
+      font-weight: 500;
+      font-family: var(--font_rr);
+      a {
+        color: $white;
+        font-weight: 500;
+        font-family: var(--font_kr);
+      }
     }
   }
   &:before {
@@ -168,7 +171,7 @@
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    border: 2px dashed #2fb4db;
+    border: 2px dashed $aqua;
     animation: rotated 35s infinite linear;
     overflow: hidden;
   }
@@ -181,28 +184,7 @@
     position: absolute;
     display: inline-block;
     border-radius: 50%;
-    border: 2px dashed #2fb4db;
+    border: 2px dashed $aqua;
     animation: rotated 35s infinite linear;
-  }
-}
-
-@-webkit-keyframes rotated {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotated {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
   }
 }

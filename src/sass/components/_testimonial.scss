@@ -1,7 +1,7 @@
 .testimonial {
   position: relative;
   .heading_tab {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
   }
   &_content {
     .sub-title {
@@ -38,12 +38,11 @@
       background: $white;
       border-radius: 4px;
       border: solid 2px transparent;
-      background-image: linear-gradient($white, $white),
-        radial-gradient(circle at bottom, $aqua, #2fb4db);
+      background-image: linear-gradient($white, $white), radial-gradient(circle at bottom, $aqua, $aqua);
       background-origin: border-box;
       background-clip: content-box, border-box;
       position: relative;
-      box-shadow: 2px 2px 60px #2fb4db26;
+      box-shadow: 2px 2px 60px $shadow;
       z-index: 1;
     }
   }
@@ -59,6 +58,7 @@
     }
     h3 {
       margin-bottom: 0;
+      font-family: var(--font_rm);
     }
     span {
       font-size: 15px;
@@ -66,6 +66,8 @@
       color: $aqua;
       text-transform: uppercase;
       display: block;
+      font-weight: 600;
+      font-family: var(--font_kr);
     }
     .client-img {
       padding-top: 11px;

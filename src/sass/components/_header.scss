@@ -1,5 +1,5 @@
 .header-top {
-  background: #00b4db;
+  background: $aquadark;
   padding: 14px 0;
   ul {
     padding: 0;
@@ -9,8 +9,12 @@
       padding: 0;
       margin-right: 20px;
       color: $white;
-      font-size: 15px;
-      &:nth-last-child(1) {
+      font-family: var(--font_rm);
+         font-size: 15px;
+      span{
+        font-family: var(--font_rr);
+      }
+         &:nth-last-child(1) {
         margin-right: 0;
       }
       span {
@@ -25,6 +29,9 @@
     .office-time,
     .social-icons {
       display: inline-block;
+      span{
+        font-family: var(--font_rm);
+      }
     }
     .office-time {
       margin-right: 50px;
@@ -50,7 +57,7 @@
 header {
   padding: 10px 0;
   position: absolute;
-  background: linear-gradient(to right, #0083b0, #00b4db);
+  background: linear-gradient(to right, $aquapuar, $aquadark);
   z-index: 999;
   width: 100%;
   transition: all 0.5s ease;
@@ -58,11 +65,12 @@ header {
     background: $white;
     position: fixed;
     width: 100%;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px $gray;
     top: 0;
-    .navbar-brand a,
+    .navbar-brand a{ color: $aqua !important;}
     .navbar-nav li a {
-      color: #2fb4db !important;
+      font-family: var(--font_rm);
+        color: $aqua !important;
     }
   }
   &.innerheader {
@@ -75,7 +83,10 @@ header {
       margin: 0;
       color: $white;
       font-size: 26px;
-      font-weight: 600;
+      letter-spacing: 1.5px;   
+           font-weight: 500;
+      font-family: var(--font_kr);
+
     }
   }
   .navbar-toggler {
@@ -97,8 +108,8 @@ header {
       a {
         padding: 0;
         color: $white !important;
-        font-weight: 600;
         font-size: 16px;
+        font-family: var(--font_rm);
       }
     }
 
@@ -108,7 +119,7 @@ header {
         top: 30px;
         .dropdown-item {
           padding: inherit;
-          color: #000 !important;
+          color: $black !important;
         }
       }
     }

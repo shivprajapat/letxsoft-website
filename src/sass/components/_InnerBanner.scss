@@ -1,10 +1,6 @@
 .innerBanner {
   position: relative;
-  background-image: radial-gradient(
-    circle farthest-corner at center center,
-    #2fb4db 0%,
-    #1c2d5a 100%
-  );
+  background-image: radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
   padding: 90px 0;
   margin-top: 70px;
   .inner_heading {
@@ -22,7 +18,7 @@
         height: 10px;
       }
       &.b_one {
-        background: #00c99c;
+        background: $aqua;
         top: 40%;
         left: 85px;
         transform: translateY(-50%);

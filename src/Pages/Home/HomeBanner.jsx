@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
+
   return (
     <section className="home" id="home">
       <div className="grid-animation">

@@ -4,12 +4,11 @@
   top: -100px;
   z-index: 99;
   .home-item {
-    box-shadow: 0px 0px 30px 30px #00000012;
+    box-shadow: 0px 0px 30px 30px $lightgray;
     padding: 35px 40px 37px 40px;
     background-color: $white;
     border-radius: 5px;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
-      box-shadow 0.3s;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     &:hover {
       background-color: $aqua;
       color: $white;
@@ -22,6 +21,7 @@
     .icon {
       margin-bottom: 20px;
       i {
+        color: $aqua;
         font-size: 40px;
         display: inline-block;
         transition: all 0.5s ease;
@@ -29,12 +29,13 @@
     }
     h3 {
       font-size: 22px;
-      font-weight: 600;
-      color: #222222;
+      font-weight: 500;
+      color: $desc-color;
       margin: 0 0 15px;
       line-height: 30px;
       text-transform: capitalize;
       transition: all 0.5s ease;
+      font-family: var(--font_rm);
     }
     .checklist {
       padding: 0;
@@ -42,10 +43,11 @@
       li {
         font-size: 16px;
         line-height: 30px;
-        color: #555555;
+        color: $btn-color;
         margin: 0;
         transition: all 0.5s ease;
         font-weight: 400;
+        font-family: var(--font_rm);
         text-align: left;
         width: 100%;
         text-overflow: ellipsis;
@@ -58,10 +60,10 @@
       bottom: -24px;
       border-radius: 100%;
       background: $white;
-      color: #222222;
+      color: $btn-color;
       border: 1px solid #e8e8e8;
       width: 50px;
       height: 50px;
-    }
+     }
   }
 }

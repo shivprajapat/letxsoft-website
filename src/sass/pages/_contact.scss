@@ -5,18 +5,19 @@
     padding: 30px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     .form-group {
-      .label {
+      label {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: var(--font_rr);
       }
       input {
-        border: 1px solid #e2e2e2;
+        border: 1px solid $form-input;
         border-radius: 0;
         font-size: 18px;
         border-radius: 5px;
         outline: none;
         &:focus {
-          border-color: #e2e2e2;
+          border-color: $form-input;
           box-shadow: none;
         }
       }
@@ -26,15 +27,12 @@
     padding: 10px 10px 10px 20px;
     border-radius: 0 10px 10px 0;
     padding: 30px;
-    background: radial-gradient(
-      circle farthest-corner at center center,
-      #2fb4db 0%,
-      #117594 100%
-    );
+    background: radial-gradient(circle farthest-corner at center center, $aqua 0%, $aquadark 100%);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
     .heading span {
       font-weight: 600;
+      font-family: var(--font_rr);
     }
     .heading,
     h5,
@@ -67,10 +65,11 @@
           width: 54px;
           border-right: 1px solid rgba(0, 0, 0, 0.1);
           text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex(center, center, null);
         }
+      }
+      h5 {
+        font-family: var(--font_kr);
       }
       span {
         font-weight: 600;
@@ -80,7 +79,7 @@
       display: inline-block;
       margin: 0 5px;
       a {
-        color: #2fb4db;
+        color: $aqua;
         padding: 10px;
         font-size: 20px;
         display: inline-block;
@@ -89,9 +88,9 @@
         border: 1px solid transparent;
         transition: all 0.4s ease;
         &:hover {
-          border-color: #2fb4db;
-          background-color: #2fb4db;
-          color: $white;
+          border-color: $lightwhite;
+          background-color: $lightwhite;
+          color: $desc-color;
         }
       }
     }
@@ -109,28 +108,12 @@
         display: inline-block;
         vertical-align: middle;
         margin: 10px;
+        font-family: var(--font_rr);
         a {
-          color: #000;
+          font-family: var(--font_rr);
+          color: $black;
         }
       }
     }
-  }
-}
-
-.btn-gray {
-  background: $aqua;
-  color: $white;
-  border-color: $aqua;
-  padding: 13px 30px 13px;
-  border-radius: 100px;
-  font-size: 18px;
-  border: solid 2px;
-  transition: all 0.4s ease;
-  text-transform: capitalize;
-  line-height: 1;
-  &:hover {
-    color: $aqua;
-    background: $white;
-    border-color: $aqua;
   }
 }
