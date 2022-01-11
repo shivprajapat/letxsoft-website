@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
+import Heading from "../../components/Heading";
 import { WorkingData } from "./data";
 const Working = () => {
   return (
@@ -8,7 +9,7 @@ const Working = () => {
         <Row className="justify-content-center">
           <Col md={12}>
             <div className="career-heading">
-              <h2>Life at Letxsoft technology</h2>
+              <Heading heading="Life at Letxsoft technology" />
             </div>
           </Col>
         </Row>

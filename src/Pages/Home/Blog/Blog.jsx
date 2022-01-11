@@ -6,7 +6,7 @@ import Heading from "../../../components/Heading";
 
 import { Blogdata } from "./data";
 export default function Blog() {
-  const readMore = useState(false);
+  const [readMore] = useState('');
   return (
     <section className="blog section_padding">
       <Container>
@@ -51,7 +51,7 @@ export default function Blog() {
                     </div>
                     <div className="blog_sec_content_meta_txt">
                       <h4>{title}</h4>
-                      <p>{readMore ? desc : `${desc.substring(0, 90)}...`}</p>
+                      <p>{readMore ? desc : `${desc.substring(0, 150)}...`}</p>
                       <Link to="/blog-details" className="btn_link">
                         <span>
                           <FaPlus />
