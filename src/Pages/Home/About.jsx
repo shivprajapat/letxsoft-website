@@ -28,7 +28,7 @@ export default function About() {
           </Col>
           <Col lg={7} md={7} data-aos="fade-left" data-aos-duration="1000">
             <div className="about_img up-down">
-              <img src={require("../../images/01.png").default} alt="" />
+              <img src={require("../../Assets/images/01.png").default} alt="" />
             </div>
           </Col>
         </Row>

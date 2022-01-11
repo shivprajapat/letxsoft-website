@@ -1,0 +1,125 @@
+.career_details_section {
+  .detail_desc {
+    position: relative;
+    padding: 24px;
+    border-radius: 6px;
+    font-weight: 800;
+    background: $white;
+    border-bottom: 3px solid $aqua;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
+    margin-top: -30px;
+
+    .ur-detail-box {
+      flex: 1;
+      .ur-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 6px;
+        padding: 10px;
+        border: 3px solid $gray;
+      }
+    }
+
+    .ur-title {
+      h4 {
+        color: $aqua;
+        display: inline;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-weight: 600;
+        font-family: var(--font_rr);
+      }
+      span {
+        line-height: 28px;
+        font-family: var(--font_rr);
+        strong {
+          font-weight: 600;
+        }
+      }
+      .full_time {
+        background: $aqua;
+        color: $white;
+        border-radius: 5px;
+        font-weight: 600;
+        padding: 5px 5px;
+        font-size: 12px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ur-detail-btn a {
+    background: $aqua;
+    color: $white !important;
+    border: 0;
+    span {
+      font-weight: 400;
+      font-family: var(--font_rr);
+    }
+  }
+  .detail_description {
+    h5 {
+      font-size: 18px;
+      background: $white567;
+      padding: 8px 15px;
+      margin-bottom: 16px;
+      line-height: 1.6;
+      border-radius: 2px;
+      border-left: 3px solid $aqua;
+      font-weight: 500;
+      font-family: var(--font_rm);
+    }
+    ul li,
+    p {
+      line-height: 28px;
+      color: $desc-color;
+      padding-left: 0 !important;
+      font-family: var(--font_rr);
+    }
+    i {
+      margin-right: 8px;
+      font-weight: 800;
+      color: $aqua;
+    }
+  }
+  .detail_form {
+    padding: 2em;
+    border-radius: 6px;
+    background: $white;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 2px $lightblack;
+    &_header {
+      border-bottom: 1px solid $lightwhite;
+      margin-bottom: 30px;
+      h6 {
+        margin-bottom: 10px;
+        font-size: 26px;
+        font-weight: 600;
+        color: $aqua;
+        font-weight: 600;
+        font-family: var(--font_rr);
+      }
+    }
+    .btn-gray {
+      width: 100%;
+    }
+    .form-group {
+      label {
+        font-weight: 500;
+        font-family: var(--font_rr);
+      }
+      .form-control {
+        background-color: $white567;
+        border: 1px solid #dde6ef !important;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      textarea {
+        resize: none;
+      }
+    }
+  }
+}

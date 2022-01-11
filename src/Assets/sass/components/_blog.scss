@@ -1,0 +1,105 @@
+.blog {
+  padding-bottom: 60px;
+  background-color: $white334;
+  .heading_tab {
+    text-align: center;
+  }
+  &_sec {
+    margin-bottom: 30px;
+    display: inline-block;
+    background-color: $white;
+    box-shadow: 0 9px 30px 0 $gray;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      .blog_sec_content {
+        background: $aqua;
+        &_meta {
+          li a,
+          span svg {
+            color: $white;
+          }
+        }
+        &_meta_txt {
+          span,
+          p,
+          h4 {
+            color: $white;
+          }
+        }
+      }
+    }
+    &_img {
+      border-radius: 5px 5px 0 0;
+      height: 260px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &_content {
+      background-color: $white;
+      padding: 20px;
+      position: relative;
+      border-radius: 0 0 5px 5px;
+      transition: all 0.3s ease;
+      &_meta {
+        ul {
+          margin-bottom: 8px;
+          li {
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 20px;
+            }
+            a {
+              font-size: 14px;
+              color: $desc-color;
+              font-weight: 600;
+              text-transform: capitalize;
+              svg {
+                margin-right: 7px;
+                position: relative;
+                top: -1px;
+                color: $aqua;
+              }
+            }
+          }
+        }
+        &_txt {
+          h4 {
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $desc-color;
+            letter-spacing: -0.6px;
+            font-family: var(--font_rr);
+          }
+          .btn_link {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $btn-color;
+            span {
+              width: 50px;
+              height: 50px;
+              border: 1px solid $gray;
+              border-radius: 100%;
+              @include flex(center, center, null);
+              transition: all 0.3s ease;
+              &:hover {
+                background-color: $aqua;
+                color: $white;
+              }
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

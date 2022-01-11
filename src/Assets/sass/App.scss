@@ -1,0 +1,37 @@
+@import "./base/base";
+
+// import abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/animation";
+
+// import utils
+@import "./utils/utils";
+
+// import components
+@import "./components/header";
+@import "./components/home";
+@import "./components/home_card";
+@import "./components/about";
+@import "./components/service";
+@import "./components/blog";
+@import "./components/footer";
+@import "./components/testimonial";
+@import "./components/InnerBanner";
+
+// import Pages
+
+@import "./pages/services";
+@import "./pages/contact";
+@import "./pages/career/working";
+@import "./pages/career/open-position";
+@import "./pages/about";
+@import "./pages/career/career-details";
+@import "./components/thank-you";
+@import "./pages/blog/blog-details";
+@import "./pages/blog/blogRight";
+
+// import Pages
+
+@import "./dashborad/leftheader";
+@import "./dashborad/rightsidebar";

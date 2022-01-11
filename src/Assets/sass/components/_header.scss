@@ -1,0 +1,127 @@
+.header-top {
+  background: $aquadark;
+  padding: 14px 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 0;
+      margin-right: 20px;
+      color: $white;
+      font-family: var(--font_rm);
+         font-size: 15px;
+      span{
+        font-family: var(--font_rr);
+      }
+         &:nth-last-child(1) {
+        margin-right: 0;
+      }
+      span {
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-right: 5px;
+      }
+    }
+  }
+  .top-header-right {
+    text-align: right;
+    .office-time,
+    .social-icons {
+      display: inline-block;
+      span{
+        font-family: var(--font_rm);
+      }
+    }
+    .office-time {
+      margin-right: 50px;
+      color: $white;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .social-icons {
+      li {
+        a {
+          color: $white;
+          transition: all 0.3s ease 0s;
+        }
+
+        &:hover a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+header {
+  padding: 10px 0;
+  position: absolute;
+  background: linear-gradient(to right, $aquapuar, $aquadark);
+  z-index: 999;
+  width: 100%;
+  transition: all 0.5s ease;
+  &.active {
+    background: $white;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px $gray;
+    top: 0;
+    .navbar-brand a{ color: $aqua !important;}
+    .navbar-nav li a {
+      font-family: var(--font_rm);
+        color: $aqua !important;
+    }
+  }
+  &.innerheader {
+    position: fixed;
+    top: 0;
+  }
+  .navbar-brand {
+    a {
+      padding: 0;
+      margin: 0;
+      color: $white;
+      font-size: 26px;
+      letter-spacing: 1.5px;   
+           font-weight: 500;
+      font-family: var(--font_kr);
+
+    }
+  }
+  .navbar-toggler {
+    background-color: $white;
+  }
+
+  .navbar-nav {
+    .nav-item,
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0;
+      margin-right: 40px;
+
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+      .basic-nav-dropdown,
+      a {
+        padding: 0;
+        color: $white !important;
+        font-size: 16px;
+        font-family: var(--font_rm);
+      }
+    }
+
+    .nav-item {
+      .dropdown-menu {
+        padding: 5px;
+        top: 30px;
+        .dropdown-item {
+          padding: inherit;
+          color: $black !important;
+        }
+      }
+    }
+  }
+}

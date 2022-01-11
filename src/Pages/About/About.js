@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import InnerBanner from "../../components/InnerBanner";
 import InnerHeader from "../../components/Header/InnerHeader";
 import Heading from "../../components/Heading";
-import aboutimg from "../../images/img-about1.png";
+import aboutimg from "../../Assets/images/img-about1.png";
 import Counter from "./Counter";
 const About = () => {
   return (

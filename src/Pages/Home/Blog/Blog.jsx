@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaPlus, FaUserFriends, FaRegCalendarAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Heading from "../../../components/Heading";
 
 import { Blogdata } from "./data";
@@ -51,11 +52,11 @@ export default function Blog() {
                     <div className="blog_sec_content_meta_txt">
                       <h4>{title}</h4>
                       <p>{readMore ? desc : `${desc.substring(0, 90)}...`}</p>
-                      <a href="#regin" className="btn_link">
+                      <Link to="/blog-details" className="btn_link">
                         <span>
                           <FaPlus />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

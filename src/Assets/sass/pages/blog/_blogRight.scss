@@ -1,0 +1,127 @@
+.right-section {
+  position: relative;
+
+  .blog-box-tab {
+    border: 1px solid $form-input;
+    padding: 20px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .ttl {
+      position: relative;
+      display: inline-block;
+      font-size: 22px;
+      margin-bottom: 30px;
+      font-family: var(--font_rr);
+      font-weight: 500;
+      text-transform: capitalize;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 2px;
+        border-radius: 10px;
+        background-color: $aqua;
+        left: 0;
+        bottom: -4px;
+      }
+    }
+
+    form {
+      position: relative;
+      .form-control {
+        height: 45px;
+        border-radius: 0;
+      }
+      button {
+        width: 50px;
+        height: 45px;
+        background-color: $aqua;
+        border-radius: 0;
+        color: $white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+
+        &:hover {
+          color: $white !important;
+        }
+      }
+    }
+    .social-links {
+      padding-left: 0;
+      li {
+        display: inline-block;
+        padding-right: 20px;
+        line-height: 26px;
+        font-family: SemiBold;
+        padding-bottom: 10px;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $aqua;
+          a {
+            color: $aqua;
+            box-shadow: 0 0 10px $gray;
+            background-color: transparent !important;
+          }
+        }
+        a {
+          color: $white;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          display: block;
+          text-align: center;
+          line-height: 40px;
+          transition: all 0.5s ease;
+          font-size: 18px;
+        }
+        &:nth-child(1) a {
+          background-color: #3b5998;
+        }
+
+        &:nth-child(2) a {
+          background-color: #de4e43;
+        }
+
+        &:nth-child(3) a {
+          background-color: #8a5a4e;
+        }
+
+        &:nth-child(4) a {
+          background-color: #209bd6;
+        }
+
+        &:nth-child(5) a {
+          background-color: #1ea1f3;
+        }
+      }
+    }
+    .tags {
+      li {
+        margin-right: 10px;
+        font-size: 13px;
+        border: 1px solid $form-input;
+        padding: 4px 20px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        display: inline-block;
+        &:hover {
+          background: $aqua;
+          a {
+            color: $white;
+          }
+        }
+        a {
+          font-size: 11px;
+          color: $black;
+
+          font-family: var(--font_rr);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import InnerHeader from "../../components/Header/InnerHeader";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
-import jobIcon from "../../images/icons/job_image-main.svg";
+import jobIcon from "../../Assets/images/icons/job_image-main.svg";
 import { Link } from "react-router-dom";
 import CareerForm from "../../components/CareerForm";
 const CareerDetails = () => {
@@ -113,7 +113,7 @@ const CareerDetails = () => {
             </div>
           </Col>
           <Col col={12} lg={4} className="detail_form_tab">
-            <CareerForm/>
+            <CareerForm />
           </Col>
         </Row>
       </Container>

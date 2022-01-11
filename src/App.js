@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./sass/App.scss";
-import "./sass/responsive.scss";
+import "./Assets/sass/App.scss";
+import "./Assets/sass/responsive.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Footer from "./components/Footer";

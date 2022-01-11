@@ -1,6 +1,6 @@
-import testimonial1 from "../../../images/testimonial/client1.jpg";
-import testimonial2 from "../../../images/testimonial/client2.jpg";
-import testimonial3 from "../../../images/testimonial/client3.jpg";
+import testimonial1 from "../../../Assets/images/testimonial/client1.jpg";
+import testimonial2 from "../../../Assets/images/testimonial/client2.jpg";
+import testimonial3 from "../../../Assets/images/testimonial/client3.jpg";
 const Testimonialdata = [
   {
     name: "kristina",

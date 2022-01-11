@@ -1,7 +1,7 @@
 import React from "react";
-import office1 from "../../images/office/office-img-1.jpg";
-import office2 from "../../images/office/office-img-2.jpg";
-import office3 from "../../images/office/office-img-3.jpg";
+import office1 from "../../Assets/images/office/office-img-1.jpg";
+import office2 from "../../Assets/images/office/office-img-2.jpg";
+import office3 from "../../Assets/images/office/office-img-3.jpg";
 
 const OurOffice = () => {
   const officeImg = [{ img: office1 }, { img: office2 }, { img: office3 }];

@@ -1,9 +1,9 @@
-import jobicon1 from "../../images/icons/job-icon-1.svg";
-import jobicon2 from "../../images/icons/job-icon-2.svg";
-import jobicon3 from "../../images/icons/job-icon-3.svg";
-import jobicon4 from "../../images/icons/job-icon-4.svg";
-import jobicon5 from "../../images/icons/job-icon-5.svg";
-import jobicon6 from "../../images/icons/job-icon-6.svg";
+import jobicon1 from "../../Assets/images/icons/job-icon-1.svg";
+import jobicon2 from "../../Assets/images/icons/job-icon-2.svg";
+import jobicon3 from "../../Assets/images/icons/job-icon-3.svg";
+import jobicon4 from "../../Assets/images/icons/job-icon-4.svg";
+import jobicon5 from "../../Assets/images/icons/job-icon-5.svg";
+import jobicon6 from "../../Assets/images/icons/job-icon-6.svg";
 
 export const WorkingData = [
   {

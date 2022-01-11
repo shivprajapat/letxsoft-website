@@ -1,7 +1,7 @@
-import mobileapp from "../../../images/blog/mobileapp.jpg";
-import ecommerce from "../../../images/blog/ecommerce.jpg";
-import digital from "../../../images/blog/digital-transform.jpg";
-import webDevelopment from "../../../images/blog/web-development.jpg";
+import mobileapp from "../../../Assets/images/blog/mobileapp.jpg";
+import ecommerce from "../../../Assets/images/blog/ecommerce.jpg";
+import digital from "../../../Assets/images/blog/digital-transform.jpg";
+import webDevelopment from "../../../Assets/images/blog/web-development.jpg";
 export const Blogdata = [
   {
     id: 1,

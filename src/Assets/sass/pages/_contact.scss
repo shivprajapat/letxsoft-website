@@ -1,0 +1,119 @@
+#contact {
+  .shaddow-bg {
+    background-color: $white;
+    border-radius: 10px 0 0 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    .form-group {
+      label {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: var(--font_rr);
+      }
+      input {
+        border: 1px solid $form-input;
+        border-radius: 0;
+        font-size: 18px;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+          border-color: $form-input;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .side-contact {
+    padding: 10px 10px 10px 20px;
+    border-radius: 0 10px 10px 0;
+    padding: 30px;
+    background: radial-gradient(circle farthest-corner at center center, $aqua 0%, $aquadark 100%);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+    .heading span {
+      font-weight: 600;
+      font-family: var(--font_rr);
+    }
+    .heading,
+    h5,
+    p,
+    h6 a {
+      color: $white;
+    }
+    p {
+      font-weight: 500;
+      padding-bottom: 20px;
+    }
+    .info-tab {
+      margin-bottom: 50px;
+      background-color: transparent;
+
+      .btn {
+        position: relative;
+        display: block;
+        text-align: left;
+        padding: 17px 30px 17px 72px;
+        text-transform: none;
+        margin-top: 10px;
+        background-color: $white;
+        abbr {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          font-size: 25px;
+          width: 54px;
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          text-align: center;
+          @include flex(center, center, null);
+        }
+      }
+      h5 {
+        font-family: var(--font_kr);
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    .socials_icons li {
+      display: inline-block;
+      margin: 0 5px;
+      a {
+        color: $aqua;
+        padding: 10px;
+        font-size: 20px;
+        display: inline-block;
+        background-color: $white;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        transition: all 0.4s ease;
+        &:hover {
+          border-color: $lightwhite;
+          background-color: $lightwhite;
+          color: $desc-color;
+        }
+      }
+    }
+  }
+  .hr-contact {
+    margin-top: 30px;
+    text-align: center;
+    h3 {
+      font-weight: 600;
+    }
+    .for-hr {
+      max-width: 440px;
+      margin: 0 auto;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+        font-family: var(--font_rr);
+        a {
+          font-family: var(--font_rr);
+          color: $black;
+        }
+      }
+    }
+  }
+}

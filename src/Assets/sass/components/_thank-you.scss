@@ -1,0 +1,25 @@
+.thank_you {
+  width: 100%;
+  margin-top: 80px;
+  .thank_you_tab {
+    background: linear-gradient(to right, $aquapuar, $aquapuar);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 16px 1px $shadow;
+    border-radius: 5px;
+    .thank-content {
+      padding-bottom: 20px;
+      h1 {
+        font-size: 4em;
+        color: $white;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 1.3em;
+        color: $white;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

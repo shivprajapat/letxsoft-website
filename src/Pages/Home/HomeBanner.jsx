@@ -29,7 +29,7 @@ const HomeBanner = () => {
           </Col>
           <Col lg={6}>
             <div className="home_img up-down">
-              <img src={require("../../images/about.png").default} alt="" />
+              <img src={require("../../Assets/images/about.png").default} alt="" />
             </div>
           </Col>
         </Row>
