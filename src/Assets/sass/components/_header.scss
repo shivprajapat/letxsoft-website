@@ -10,11 +10,11 @@
       margin-right: 20px;
       color: $white;
       font-family: var(--font_rm);
-         font-size: 15px;
-      span{
+      font-size: 15px;
+      span {
         font-family: var(--font_rr);
       }
-         &:nth-last-child(1) {
+      &:nth-last-child(1) {
         margin-right: 0;
       }
       span {
@@ -29,7 +29,7 @@
     .office-time,
     .social-icons {
       display: inline-block;
-      span{
+      span {
         font-family: var(--font_rm);
       }
     }
@@ -67,10 +67,12 @@ header {
     width: 100%;
     box-shadow: 0 0 10px $gray;
     top: 0;
-    .navbar-brand a{ color: $aqua !important;}
+    .navbar-brand a {
+      color: $aqua !important;
+    }
     .navbar-nav li a {
       font-family: var(--font_rm);
-        color: $aqua !important;
+      color: $aqua !important;
     }
   }
   &.innerheader {
@@ -83,10 +85,9 @@ header {
       margin: 0;
       color: $white;
       font-size: 26px;
-      letter-spacing: 1.5px;   
-           font-weight: 500;
+      letter-spacing: 1.5px;
+      font-weight: 600;
       font-family: var(--font_kr);
-
     }
   }
   .navbar-toggler {

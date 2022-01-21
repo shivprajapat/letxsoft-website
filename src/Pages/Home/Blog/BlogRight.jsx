@@ -13,7 +13,7 @@ export default function BlogRight() {
         </form>
       </div>
       <div className="blog-box-tab">
-        <h3 className='ttl'>FOLLOW US</h3>
+        <h3 className='ttl'>Follow Us</h3>
         <ul className='social-links'>
           <li><a href="https://www.facebook.com" target='_new'><FaFacebookF /></a></li>
           <li><a href="https://www.google.com" target='_new'><FaGooglePlusG /></a></li>

@@ -21,41 +21,7 @@ const About = () => {
                 />
               </div>
               <div className="inner-column">
-                <div className="text pb-4">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>
-
-                <div className="text pb-4">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum.{" "}
-                </div>
-
-                <div className="text pb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.{" "}
-                </div>
+                <div className="text pb-4">Letxsoft Technology is one of the well-known leaders in the technology revolution and provides complete IT solutions since 2020. The company provides the best services in Mobile application, Desktop application, Website development, Designing & Digital marketing. We are a team of highly professional experts. We are rigorously committed to quality and professionalism. We always seek an opportunity to help & Consult with any requirements, rather than selling our services to anyone.</div>
               </div>
             </Col>
 

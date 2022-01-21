@@ -8,6 +8,7 @@ import {
   FaRegClock,
 } from "react-icons/fa";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -70,10 +71,10 @@ export default function Footer() {
                         </a>
                       </li>
                       <li>
-                        <a href="#regin">
+                        <Link to="/contact">
                           <FaAngleDoubleRight />
                           Contact Us
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a href="#regin">
@@ -171,7 +172,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom text-center">
         <div className="copyright">
-          Copyright © 2021 <a href="/">Letxsoft Technology</a>. All Rights Reserved.
+          Copyright © 2022 <a href="/">Letxsoft Technology</a>. All Rights Reserved.
         </div>
       </div>
       <div className="spinning-circle-top"></div>

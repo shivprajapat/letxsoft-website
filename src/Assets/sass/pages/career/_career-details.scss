@@ -110,6 +110,26 @@
         font-weight: 500;
         font-family: var(--font_rr);
       }
+      .input-file {
+        .form-control-file {
+          &[type="file"] {
+            cursor: pointer;
+            display: block;
+            &::-webkit-file-upload-button {
+              font: inherit;
+              -webkit-appearance: button;
+              width: 100%;
+              border-radius: 0;
+              cursor: pointer;
+              border: none;
+              padding: 10px;
+              margin: 0;
+              font-weight: 600;
+              font-family: var(--font_kr);
+            }
+          }
+        }
+      }
       .form-control {
         background-color: $white567;
         border: 1px solid #dde6ef !important;

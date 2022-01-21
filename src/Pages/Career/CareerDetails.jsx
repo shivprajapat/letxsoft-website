@@ -7,7 +7,9 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import jobIcon from "../../Assets/images/icons/job_image-main.svg";
 import { Link } from "react-router-dom";
 import CareerForm from "../../components/CareerForm";
-const CareerDetails = () => {
+import { OpenPositionsData } from "./data";
+
+const CareerDetails = (props) => {
   const experienceData = [
     {
       title:
@@ -28,6 +30,11 @@ const CareerDetails = () => {
     },
     { title: "Good project management skills." },
   ];
+
+  let getId = props.match.params.id;
+  const getData = OpenPositionsData.CareerData[getId - 1];
+
+  console.log(getData);
   return (
     <div className="career_details_section">
       <InnerHeader />
@@ -41,7 +48,7 @@ const CareerDetails = () => {
                   <img className="img-fluid" src={jobIcon} alt="Office" />
                 </div>
                 <div className="ur-title my-3 my-md-0">
-                  <h4 className="mb-1">React JS Developer</h4>
+                  <h4 className="mb-1">{getData.title}</h4>
                   <span className="full_time job_type">Full Time</span>
                   <div>
                     <span>
@@ -50,18 +57,18 @@ const CareerDetails = () => {
                   </div>
                   <div>
                     <span>
-                      <strong>Job Opening:</strong> 3 Positions
+                      <strong>Job Opening:</strong> {getData.opening} Positions
                     </span>
                   </div>
                   <div>
                     <span>
-                      <strong>Offerd Salary:</strong> 1.2 - 12.0 LPA
+                      <strong>Offerd Salary:</strong> {getData.salary}
                     </span>
                   </div>
                 </div>
               </div>
               <div className="ur-detail-btn">
-                <Link to="/" className="btn  mt-1">
+                <Link to="/career" className="btn  mt-1">
                   <span>Go Back</span>
                 </Link>
               </div>
@@ -72,39 +79,17 @@ const CareerDetails = () => {
           <Col col={12} lg={8} mb={4}>
             <div className="detail_description">
               <DetailsHeader title="Job Description" />
-              <p className="px-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-                dicta harum quos consectetur asperiores facilis eum, neque
-                provident voluptatem, qui, officia debitis iure quisquam
-                recusandae aperiam magnam? Ipsam, maxime praesentium. Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Facere dicta
-                harum quos consectetur asperiores facilis eum, neque provident
-                voluptatem, qui, officia debitis iure quisquam recusandae
-                aperiam magnam? Ipsam, maxime praesentium. Lorem ipsum dolor
-                sit, amet consectetur adipisicing elit. Facere dicta harum quos
-                consectetur asperiores facilis eum, neque provident voluptatem,
-                qui, officia debitis iure quisquam recusandae aperiam magnam?
-                Ipsam, maxime praesentium.
-              </p>
-              <p className="px-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere
-                dicta harum quos consectetur asperiores facilis eum, neque
-                provident voluptatem, qui, officia debitis iure quisquam
-                recusandae aperiam magnam? Ipsam, maxime praesentium.
-              </p>
+              <p className="px-3">{getData.jobDescription}</p>
             </div>
             <div className="detail_description">
-              <DetailsHeader title="Required Knowledge, Skills, and Abilities" />
-            </div>
-            <div className="detail_description">
-              <DetailsHeader title="Education + Experience" />
+              <DetailsHeader title="Required Knowledge, Skills + Experience" />
               <ul>
                 {experienceData.map((item, index) => {
                   return (
                     <li key={index}>
                       <i>
                         <FaArrowAltCircleRight />
-                      </i>{" "}
+                      </i>
                       {item.title}
                     </li>
                   );

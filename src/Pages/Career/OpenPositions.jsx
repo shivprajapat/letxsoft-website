@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Heading from "../../components/Heading";
 import { OpenPositionsData } from "./data";
 const OpenPositions = () => {
+
   return (
     <section className="open-positions section_padding">
       <Container>
@@ -12,8 +13,8 @@ const OpenPositions = () => {
         </Row>
         <Row className="justify-content-center">
           <Col md={10}>
-            {OpenPositionsData.map((career, index) => {
-              const { title, price, opening } = career;
+            {OpenPositionsData.CareerData.map((career, index) => {
+              const { title, salary, opening, id } = career;
               return (
                 <div className="job-apply-box" key={index}>
                   <Row className="align-items-center">
@@ -28,14 +29,14 @@ const OpenPositions = () => {
                             <strong>Job Opening: </strong> {opening}
                           </span>
                           <span>
-                            <strong>Price: {price}</strong>{" "}
+                            <strong>Price: {salary}</strong>{" "}
                           </span>
                         </p>
                       </div>
                     </Col>
                     <Col lg={3} md={4}>
                       <div className="apply-now text-md-right">
-                        <Link className="apply-now-btn" to="/career-details">
+                        <Link className="apply-now-btn" to={`/career-details/${id}`}>
                           Apply Now
                         </Link>
                       </div>

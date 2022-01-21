@@ -1,14 +1,19 @@
 import React from 'react'
-import InnerBanner from "../../components/InnerBanner";
+import InnerBanner from "../../../components/InnerBanner";
 
-import InnerHeader from "../../components/Header/InnerHeader";
+import InnerHeader from "../../../components/Header/InnerHeader";
 import { Col, Container, Row } from 'react-bootstrap';
-import Heading from '../../components/Heading'
-import { FaEyeSlash, FaUserAlt, FaArrowLeft } from "react-icons/fa";
+import Heading from '../../../components/Heading'
+import { FaRegCalendarAlt, FaUserAlt, FaArrowLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import BlogRight from './BlogRight';
-import blogdetailsimg from '../../Assets/images/blog/mobileapp.jpg'
-const BlogDetails = () => {
+import { Blogdata } from "./data";
+
+const BlogDetails = (props) => {
+  let getId = props.match.params.id;
+  const getData = Blogdata.cardData[getId - 1];
+
+  console.log(getData);
   return (
     <React.Fragment>
       <InnerHeader />
@@ -22,26 +27,26 @@ const BlogDetails = () => {
                 <div className="user-tab">
                   <div className="user-sec">
                     <ul>
-                      <li><span><FaUserAlt /></span> Admin</li>
-                      <li><span><FaEyeSlash /></span> 33</li>
+                      <li><span><FaUserAlt /></span> User</li>
+                      <li><span><FaRegCalendarAlt /></span> Aug 31, 2021
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div className='ServiceBox-tab d-flex'>
                   <div className="card mb-4 text-left">
                     <div className="img-wrap">
-                      <img src={blogdetailsimg} className='img-fluid' alt="" />
+                      <img src={getData.img} className='img-fluid' alt="" />
                     </div>
                     <div className="card-body p-0">
-                      <h5 className="card-title">Mobile</h5>
-                      <p className="card-text"><small className="text-muted">Aug 31, 2021</small></p>
-                      <p className="card-text">Your customer is on the move and needs access to your brand anytime, anywhere. Our team is ready to engineer (not just code) your app in whatever form you need. Our award winning apps make businesses more productive and cost efficient.
-                      </p>
+                      <h5 className="card-title">{getData.title}</h5>
+                      <p className="card-text"><small className="text-muted">{getData.date}</small></p>
+                      <p className="card-text">{getData.desc}</p>
                     </div>
                   </div>
                 </div>
                 <div className="goback">
-                  <Link to='/blog'>
+                  <Link to='/'>
                     <FaArrowLeft />
                   </Link>
                 </div>

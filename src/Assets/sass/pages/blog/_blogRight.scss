@@ -56,9 +56,12 @@
         display: inline-block;
         padding-right: 20px;
         line-height: 26px;
-        font-family: SemiBold;
+        font-family: var(--font_rr);
         padding-bottom: 10px;
         transition: all 0.3s ease;
+        &:last-child {
+          padding-right: 0;
+        }
         &:hover {
           color: $aqua;
           a {

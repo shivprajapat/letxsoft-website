@@ -6,6 +6,7 @@ import Blog from "./Home/Blog/Blog";
 import Testimonial from "./Home/testimonial/Testimonial";
 import HomeBanner from "./Home/HomeBanner";
 import Header from "../components/Header/Header";
+
 const Home = () => {
   return (
     <React.Fragment>

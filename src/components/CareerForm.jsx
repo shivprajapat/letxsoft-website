@@ -41,7 +41,9 @@ const CareerForm = () => {
             <Form.Control as="textarea" rows={3} name='message' />
           </Form.Group>
           <Form.Group className="mb-3">
-            <Form.Control type="file" name="my_file" />
+            <div className='input-file'>
+              <Form.Control type="file" name="my_file" />
+            </div>
           </Form.Group>
           <Form.Group>
             <button type="submit" value="Send" className="btn-gray">Send</button>

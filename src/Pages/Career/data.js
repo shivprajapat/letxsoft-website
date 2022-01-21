@@ -8,56 +8,58 @@ import jobicon6 from "../../Assets/images/icons/job-icon-6.svg";
 export const WorkingData = [
   {
     title: "conducive environment",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "so that our genius team can give their best.",
     img: jobicon1,
   },
   {
     title: "shared success",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "success is equally distributed within the team.",
     img: jobicon2,
   },
   {
     title: "healthy meals and snacks",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "we provide refreshment to keep our team chill at work.",
     img: jobicon3,
   },
   {
     title: "medical insurance",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "we provide them with medical insurance from a renowned company.",
     img: jobicon4,
   },
   {
     title: "best gadgets",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+    description: "our team possess the best tech stuff to deliver the best performance.",
     img: jobicon5,
   },
   {
     title: "Culture Of Learning",
-    description:
-      "In today’s scenario, we know we will have to keep improving ourselves, that’s why we provide training and learning programs to our people for their and company’s growth.",
+    description: "we provide training and learning programs to our people for their and company’s growth.",
     img: jobicon6,
   },
 ];
 
-export const OpenPositionsData = [
-  {
-    title: "React JS Developer",
-    price: "(1.2 - 12.0)",
-    opening: "3",
-  },
-  {
-    title: "React Native Developer",
-    price: "(1.2 - 12.0)",
-    opening: "5",
-  },
-  {
-    title: "Full Stack Developer",
-    price: "((1.2 - 9.0 )",
-    opening: "3",
-  },
-];
+export const OpenPositionsData = {
+  CareerData: [
+    {
+      id: 1,
+      title: "React JS Developer",
+      salary: "(1.2 - 12.0)",
+      opening: "3",
+      jobDescription: 'Letxsoft Technology. is looking for a skilled react.js developer to join our front-end development team. In this role, you will be responsible for developing and implementing user interface components using React.js concepts and workflows such as Redux and Webpack. You will also be responsible for profiling and improving front-end performance and documenting our front-end codebase.',
+    },
+    {
+      id: 2,
+      title: "React Native Developer",
+      salary: "(1.2 - 12.0)",
+      opening: "2",
+      jobDescription: 'React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architect and building these applications'
+    },
+    {
+      id: 3,
+      title: "Software Developer",
+      salary: "((1.2 - 9.0 )",
+      opening: "5",
+      jobDescription: 'We are looking for an experienced software developer who wants to join the Co-founding team and be part of the entire product journey, make key decisions about the product and how we scale! You should love tackling convoluted problems and coming up with clean, stable solutions that scale. The ideal candidate would be someone who has a genuine passion for designing and implementing elegant software solutions. '
+    },
+  ]
+}
