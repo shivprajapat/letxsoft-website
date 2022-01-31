@@ -5,53 +5,107 @@
     border: 1px solid $form-input;
     padding: 20px;
     margin-bottom: 30px;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     .ttl {
       position: relative;
-      display: inline-block;
+      display: block;
       font-size: 22px;
       margin-bottom: 30px;
-      font-family: var(--font_rr);
+      font-family: var(--font_kr);
+      border-bottom: 1px solid #ddd;
       font-weight: 500;
+      width: 100%;
       text-transform: capitalize;
+
       &::after {
         position: absolute;
         content: "";
         width: 80px;
-        height: 2px;
+        height: 1px;
         border-radius: 10px;
         background-color: $aqua;
         left: 0;
-        bottom: -4px;
+        bottom: -2px;
       }
     }
 
     form {
       position: relative;
+
       .form-control {
         height: 45px;
         border-radius: 0;
+        border: 0;
+        background-color: #f4f4f4;
       }
+
       button {
-        width: 50px;
-        height: 45px;
-        background-color: $aqua;
-        border-radius: 0;
-        color: $white;
+        width: 43px;
+        height: 37px;
+        background-color: transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        color: $aqua;
         position: absolute;
-        top: 0;
+        top: 50%;
         right: 0;
         font-size: 20px;
+        transform: translate(-11%, -50%);
+        display: flex;
 
         &:hover {
+          background-color: $aqua;
           color: $white !important;
         }
       }
     }
+
+    .blog-post {
+      article {
+        margin-bottom: 10px;
+      }
+      .item {
+        @include flex(center, space-between, null);
+        transition: all 0.3s ease;
+        &:hover {
+          a {
+            color: $aqua !important;
+          }
+        }
+        img {
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+          border-radius: 5px;
+          background-size: cover !important;
+          background-repeat: no-repeat;
+          background-position: 50% !important;
+        }
+        .info span {
+          display: block;
+          color: #6b6b84;
+          text-transform: uppercase;
+          margin-top: -2px;
+          margin-bottom: 5px;
+          font-size: 13px;
+        }
+
+        a {
+          color: $desc-color;
+          margin-bottom: 0;
+          font-size: 17px;
+          font-weight: 700;
+        }
+      }
+    }
+
     .social-links {
       padding-left: 0;
+
       li {
         display: inline-block;
         padding-right: 20px;
@@ -59,17 +113,21 @@
         font-family: var(--font_rr);
         padding-bottom: 10px;
         transition: all 0.3s ease;
+
         &:last-child {
           padding-right: 0;
         }
+
         &:hover {
           color: $aqua;
+
           a {
             color: $aqua;
             box-shadow: 0 0 10px $gray;
             background-color: transparent !important;
           }
         }
+
         a {
           color: $white;
           width: 40px;
@@ -81,6 +139,7 @@
           transition: all 0.5s ease;
           font-size: 18px;
         }
+
         &:nth-child(1) a {
           background-color: #3b5998;
         }
@@ -102,27 +161,66 @@
         }
       }
     }
+
     .tags {
       li {
         margin-right: 10px;
         font-size: 13px;
-        border: 1px solid $form-input;
-        padding: 4px 20px;
+        border: none;
+        padding: 6px 20px;
         border-radius: 4px;
         margin-bottom: 10px;
         display: inline-block;
+        background-color: #f4f4f4;
+        transition: all 0.3s ease;
+        border-radius: 3px;
+        line-height: 22px;
+        cursor: pointer;
+
         &:hover {
           background: $aqua;
+
           a {
             color: $white;
           }
         }
-        a {
-          font-size: 11px;
-          color: $black;
 
+        a {
+          line-height: 0;
+          font-size: 12px;
+          color: $desc-color;
+          font-weight: 700;
           font-family: var(--font_rr);
-          font-weight: 500;
+        }
+      }
+    }
+
+    .categories {
+      li {
+        margin-bottom: 10px;
+        position: relative;
+        transition: all 0.3s ease;
+        padding-left: 20px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          top: 25%;
+          left: 0;
+          border-radius: 50%;
+          background-color: $aqua;
+        }
+
+        a {
+          color: $btn-color;
+          font-weight: 600;
+        }
+        &:hover {
+          a {
+            color: $aqua !important;
+          }
         }
       }
     }

@@ -4,25 +4,45 @@
     margin-left: 0;
     margin-bottom: 20px;
   }
-  .user-tab ul {
-    padding: 0;
-    margin: 0;
+  .user-tab {
+    padding: 20px 0;
+    .card {
+      transition: all 0.4s ease;
+      @include flex(center, null, row);
+      &:hover {
+        background-color: $aqua;
+        .icon,
+        .time span,
+        .time a {
+          color: $white;
+        }
+      }
 
-    li {
-      display: inline-block;
-      margin-right: 20px;
-      font-family: var(--font_rr);
-      font-size: 20px;
-
-      span {
-        margin-right: 5px;
-        color: $aqua;
-        font-size: 20px;
+      .icon {
+        display: inline-block;
+        font-size: 25px;
+        color: $btn-color;
+        margin-right: 10px;
+      }
+      .time {
+        @include flex(null, center, column);
+        text-align: left;
+        span {
+          font-family: var(--font_kr);
+          font-weight: 600;
+          margin-bottom: 5px;
+          font-size: 16px;
+          color: $aqua;
+        }
+        a {
+          color: $btn-color;
+          font-weight: 600;
+        }
       }
     }
   }
   .ServiceBox-tab {
-    margin-top: 40px;
+    // margin-top: 40px;
     .card {
       border: none;
       box-shadow: 0 0 10px $gray;

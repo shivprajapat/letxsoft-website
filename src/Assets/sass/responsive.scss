@@ -238,4 +238,32 @@
   .main-footer .contact-widget li:last-child {
     margin-bottom: 0;
   }
+  .details-inner-data {
+    padding-bottom: 0;
+  }
+  #comment-form {
+    .form-row {
+      display: block !important;
+    }
+    .mt-3.form-group {
+      text-align: center;
+    }
+  }
+  .blog-post {
+    .item {
+      .thumb img{
+        width: 40px;
+        height: 40px;
+      }
+      .info {
+        padding-left: 10px;
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+  .right-section .blog-box-tab{
+    margin-bottom: 15px;
+  }
 }

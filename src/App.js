@@ -25,14 +25,16 @@ function App() {
 
   return (
     <React.Fragment>
-      {loading ?
+      {/* {loading ?
         <Preloader />
-        : <Router>
+        :  */}
+        <Router>
           <ScrollToTop />
           <Routes />
           <Footer />
           <ScrollButton />
-        </Router>}
+        </Router>
+        {/*  } */}
     </React.Fragment>
   );
 }

@@ -2,12 +2,13 @@ import React from 'react'
 import InnerBanner from "../../../components/InnerBanner";
 
 import InnerHeader from "../../../components/Header/InnerHeader";
-import { Col, Container, Row } from 'react-bootstrap';
-import Heading from '../../../components/Heading'
-import { FaRegCalendarAlt, FaUserAlt, FaArrowLeft } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import { FaRegCalendarAlt, FaUserAlt} from "react-icons/fa";
 import BlogRight from './BlogRight';
 import { Blogdata } from "./data";
+import Comment from '../../../components/comment/Comment'
+import CommentForm from '../../../components/comment/CommentForm'
+import Auther from '../../../components/comment/Auther';
 
 const BlogDetails = (props) => {
   let getId = props.match.params.id;
@@ -23,20 +24,42 @@ const BlogDetails = (props) => {
           <Row>
             <Col lg={8}>
               <div className='left-section clearfix'>
-                <Heading heading="Mobile App" />
-                <div className="user-tab">
-                  <div className="user-sec">
-                    <ul>
-                      <li><span><FaUserAlt /></span> User</li>
-                      <li><span><FaRegCalendarAlt /></span> Aug 31, 2021
-                      </li>
-                    </ul>
-                  </div>
-                </div>
                 <div className='ServiceBox-tab d-flex'>
                   <div className="card mb-4 text-left">
                     <div className="img-wrap">
                       <img src={getData.img} className='img-fluid' alt="" />
+                    </div>
+                    <div className="user-tab">
+                      <div className="user-sec">
+                        <Row>
+                          <Col lg={3} md={3} sm={4}>
+                          <Card>
+                            <div className='icon'><FaUserAlt /></div>
+                              <div className='time'>
+                              <span>CATEGORY</span>
+                                <a href="/">Fashion</a>
+                              </div>
+                            </Card>
+                          </Col>
+                          <Col lg={3} md={3} sm={4}>
+                            <Card>
+                              <div className='icon'><FaRegCalendarAlt /></div>
+                              <div className='time'>
+                              <span>LAST UPDATED</span>
+                                <a href="/">Aug 31, 2021</a>
+                              </div></Card>
+                          </Col>
+                          <Col lg={3} md={3} sm={4}>
+                            <Card>
+                              <div className='icon'><FaRegCalendarAlt /></div>
+                              <div className='time'>
+                                <span>VIEW</span>
+                                <a href="/">813,454</a>
+                              </div>
+                            </Card>
+                          </Col>
+                        </Row>
+                      </div>
                     </div>
                     <div className="card-body p-0">
                       <h5 className="card-title">{getData.title}</h5>
@@ -45,17 +68,18 @@ const BlogDetails = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="goback">
-                  <Link to='/'>
-                    <FaArrowLeft />
-                  </Link>
-                </div>
+              </div>
+              <div className='details-inner-data section_padding'>
+<Auther/>
+                <Comment />
+                <CommentForm />
               </div>
             </Col>
             <Col md={12} lg={4}>
               <BlogRight />
             </Col>
           </Row>
+
         </Container>
       </div>
     </React.Fragment>
