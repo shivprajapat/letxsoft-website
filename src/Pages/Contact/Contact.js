@@ -11,10 +11,15 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import InnerHeader from "../../components/Header/InnerHeader";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <React.Fragment>
+      <Helmet htmlAttributes>
+        <title>Contact Us || Page</title>
+        <meta name="description" content="Contact Us Page" />
+      </Helmet>
       <InnerHeader />
       <InnerBanner heading="Contact"  name="Home" subname="Contact"/>
       <div id="contact" className="section_padding">

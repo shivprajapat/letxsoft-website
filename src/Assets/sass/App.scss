@@ -1,3 +1,44 @@
+/*-----------------------------------------------------------
+* Template Name    : Letxsoft Technology
+* Auther Name      : Shiv Kumar Prajapat
+* File Description : This files Includes all Style CSS
+*------------------------------------------------------------*/
+
+/*======================================================================
+ Table of Content:
+
+=================================
+  Components CSS
+=================================
+
+01. Base
+02. Variables
+03. Mixins
+04. Animation
+05. Utils
+06. Header
+07. Home
+08. Home Card
+09. About
+10. Service
+11. Blog
+12 Scroll Button
+13. Testimonial
+14. Comment
+15. Auther
+16. Services
+17. Contact
+18. working
+19. open-position
+20. About Page
+21. Career Details
+22. Thank You
+23. Blog Details
+24. blogRight
+25. Responsive CSS
+
+ ========================================================================*/
+
 @import "./base/base";
 
 // import abstracts
@@ -20,20 +61,20 @@
 @import "./components/InnerBanner";
 @import "./components/preloader";
 @import "./components/comment";
-@import "./pages//blog//auther";
+@import "./components//scroll-button";
+@import "./components/thank-you";
 
 // import Pages
 
+@import "./pages/blog//auther";
 @import "./pages/services";
 @import "./pages/contact";
 @import "./pages/career/working";
 @import "./pages/career/open-position";
 @import "./pages/about";
 @import "./pages/career/career-details";
-@import "./components/thank-you";
 @import "./pages/blog/blog-details";
 @import "./pages/blog/blogRight";
-@import "./components//scroll-button";
 
 // import Pages
 @import "./dashborad/leftheader";

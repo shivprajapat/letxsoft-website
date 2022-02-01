@@ -5,11 +5,16 @@ import InnerHeader from "../../components/Header/InnerHeader";
 import { FaPlus, FaUserFriends, FaRegCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Blogdata } from "../Home/Blog/data";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
     const [readMore] = useState('');
     return (
         <React.Fragment>
+          <Helmet htmlAttributes>
+        <title>Blog || Page</title>
+        <meta name="description" content="Blog Page" />
+      </Helmet>
             <InnerHeader />
             <InnerBanner heading="Blog"  name="Home" subname="Blog"/>
             <div id="blog" className="section_padding">

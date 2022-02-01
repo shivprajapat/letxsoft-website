@@ -10,13 +10,13 @@ import ScrollToTop from "./ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollButton from "./components/ScrollButton";
-// import Preloader from "./components/preloader/Preloader";
+import Preloader from "./components/preloader/Preloader";
 function App() {
-  // let [loading, setLoading] = useState(false);
+  let [loading, setLoading] = useState(false);
   useEffect(() => {
-    // setLoading(true)
+    setLoading(true)
     setTimeout(() => {
-      // setLoading(false)
+      setLoading(false)
     }, 3000);
 
     AOS.init();
@@ -25,16 +25,16 @@ function App() {
 
   return (
     <React.Fragment>
-      {/* {loading ?
+      {loading ?
         <Preloader />
-        :  */}
-      <Router>
-        <ScrollToTop />
-        <Routes />
-        <Footer />
-        <ScrollButton />
-      </Router>
-      {/*  } */}
+        :
+        <Router>
+          <ScrollToTop />
+          <Routes />
+          <Footer />
+          <ScrollButton />
+        </Router>
+      }
     </React.Fragment>
   );
 }

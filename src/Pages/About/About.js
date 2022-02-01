@@ -5,11 +5,16 @@ import InnerHeader from "../../components/Header/InnerHeader";
 import Heading from "../../components/Heading";
 import aboutimg from "../../Assets/images/img-about1.png";
 import Counter from "./Counter";
+import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <React.Fragment>
+      <Helmet htmlAttributes>
+        <title>About || Page</title>
+        <meta name="description" content="About Page" />
+      </Helmet>
       <InnerHeader />
-      <InnerBanner heading="About"  name="Home" subname="About"/>
+      <InnerBanner heading="About" name="Home" subname="About" />
       <div id="about" className="section_padding">
         <Container>
           <Row className="clearfix align-items-center">

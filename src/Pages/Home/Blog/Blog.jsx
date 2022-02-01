@@ -69,16 +69,6 @@ export default function Blog() {
         <div className="text-center">
         <div className="btn-block"><a className="blue_btn" href="/blog">View More</a></div>
         </div>
-
-        {/* <div>
-          <Pagination>
-            <Pagination.Prev>Prev</Pagination.Prev>
-            <Pagination.Item>{1}</Pagination.Item>
-            <Pagination.Item active>{2}</Pagination.Item>
-            <Pagination.Ellipsis />
-            <Pagination.Next disabled>Next</Pagination.Next>
-          </Pagination>
-        </div> */}
       </Container>
     </section>
   );

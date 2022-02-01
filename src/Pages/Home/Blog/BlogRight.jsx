@@ -37,43 +37,6 @@ export default function BlogRight() {
               )
             })
           }
-
-          {/* <article >
-            <div className="item">
-              <a className="thumb" href="/blog-details/#">
-                <img src="https://rewy-gatsby.envytheme.com/static/blog-img9-6c1bc8bf646b7143c670f3a587d5d751.jpg" alt="" />
-              </a>
-              <div className="info">
-                <span>June 10, 2020</span>
-                <a href="/blog-details/#">The Data Surrounding Higher Education</a>
-              </div>
-
-            </div>
-          </article>
-          <article >
-            <div className="item">
-              <a className="thumb" href="/blog-details/#">
-                <img src="https://rewy-gatsby.envytheme.com/static/blog-img9-6c1bc8bf646b7143c670f3a587d5d751.jpg" alt="" />
-              </a>
-              <div className="info">
-                <span>June 10, 2020</span>
-                <a href="/blog-details/#">The Data Surrounding Higher Education</a>
-              </div>
-
-            </div>
-          </article>
-          <article >
-            <div className="item">
-              <a className="thumb" href="/blog-details/#">
-                <img src="https://rewy-gatsby.envytheme.com/static/blog-img9-6c1bc8bf646b7143c670f3a587d5d751.jpg" alt="" />
-              </a>
-              <div className="info">
-                <span>June 10, 2020</span>
-                <a href="/blog-details/#">The Data Surrounding Higher Education</a>
-              </div>
-
-            </div>
-          </article> */}
         </div>
       </div>
       <div className="blog-box-tab">

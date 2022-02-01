@@ -9,6 +9,7 @@ import { Blogdata } from "./data";
 import Comment from '../../../components/comment/Comment'
 import CommentForm from '../../../components/comment/CommentForm'
 import Auther from '../../../components/comment/Auther';
+import { Helmet } from "react-helmet";
 
 const BlogDetails = (props) => {
   let getId = props.match.params.id;
@@ -16,6 +17,10 @@ const BlogDetails = (props) => {
 
   return (
     <React.Fragment>
+      <Helmet htmlAttributes>
+        <title>Blog Details || Page</title>
+        <meta name="description" content="Blog Details Page" />
+      </Helmet>
       <InnerHeader />
       <InnerBanner heading="Blog Details"  name="Home" subname="Blog Details"/>
       <div className='blog-details section_padding'>

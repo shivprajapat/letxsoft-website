@@ -6,10 +6,15 @@ import Blog from "./Home/Blog/Blog";
 import Testimonial from "./Home/testimonial/Testimonial";
 import HomeBanner from "./Home/HomeBanner";
 import Header from "../components/Header/Header";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <React.Fragment>
+      <Helmet htmlAttributes>
+        <title>Home || Page</title>
+        <meta name="description" content="Home Page" />
+      </Helmet>
       <Header />
       <HomeBanner />
       <HomeCard />
