@@ -1,6 +1,8 @@
 .header-top {
   background: $aquadark;
   padding: 14px 0;
+  position: relative;
+  z-index: 999;
   ul {
     padding: 0;
     margin: 0;
@@ -42,13 +44,21 @@
     }
     .social-icons {
       li {
+        border-radius: 100%;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
         a {
           color: $white;
-          transition: all 0.3s ease 0s;
+          @include Transition(0.3s);
+          @include flex(center, center, null);
+          height: 100%;
         }
-
-        &:hover a {
-          color: $black;
+        &:hover {
+          background-color: $white;
+          a {
+            color: $aqua;
+          }
         }
       }
     }
@@ -60,7 +70,7 @@ header {
   background: linear-gradient(to right, $aquapuar, $aquadark);
   z-index: 999;
   width: 100%;
-  transition: all 0.5s ease;
+  @include Transition(0.5s);
   &.active {
     background: $white;
     position: fixed;
@@ -93,7 +103,6 @@ header {
   .navbar-toggler {
     background-color: $white;
   }
-
   .navbar-nav {
     .nav-item,
     li {
@@ -101,7 +110,22 @@ header {
       display: inline-block;
       padding: 0;
       margin-right: 40px;
-
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0px;
+        @include Transition(0.5s);
+        height: 2px;
+        border-radius: 10px;
+        background-color: $white;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
       &:nth-last-child(1) {
         margin-right: 0;
       }

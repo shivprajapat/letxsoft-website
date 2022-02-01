@@ -6,7 +6,7 @@ const DHeader = () => {
   const [notificationtoggle, setNotificationToggle] = React.useState(false);
   const handleclick = () => {
     setNotificationToggle(!notificationtoggle);
-    console.log(handleclick);
+    // console.log(handleclick);
   };
   return (
     <div className="dheader">

@@ -67,3 +67,25 @@
     }
   }
 }
+
+.breadcrumb {
+  justify-content: center;
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  .breadcrumb-item {
+    font-size: 18px;
+    margin-bottom: 15px;
+    a,
+    & {
+      font-family: var(--font_rm);
+    }
+    &.active {
+      color: $white;
+    }
+    &::before,
+    a {
+      color: $white !important;
+    }
+  }
+}

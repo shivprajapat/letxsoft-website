@@ -82,6 +82,7 @@
         font-size: 60px;
         line-height: 1em;
         @include Transition(500ms);
+
         .icon {
           position: relative;
           color: $aqua;

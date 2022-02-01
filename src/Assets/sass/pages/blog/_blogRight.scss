@@ -41,6 +41,9 @@
         border-radius: 0;
         border: 0;
         background-color: #f4f4f4;
+        font-family: var(--font_rr);
+        font-weight: 500;
+        color: $desc-color;
       }
 
       button {
@@ -48,7 +51,7 @@
         height: 37px;
         background-color: transparent;
         border-radius: 5px;
-        transition: all 0.3s ease;
+        @include Transition(0.3s);
         color: $aqua;
         position: absolute;
         top: 50%;
@@ -69,30 +72,32 @@
         margin-bottom: 10px;
       }
       .item {
-        @include flex(center, space-between, null);
-        transition: all 0.3s ease;
+        @include flex(center, null, null);
+        @include Transition(0.3s);
         &:hover {
           a {
             color: $aqua !important;
           }
         }
         img {
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
           display: inline-block;
           border-radius: 5px;
           background-size: cover !important;
           background-repeat: no-repeat;
           background-position: 50% !important;
         }
-        .info span {
+        .info {
+          margin-left: 10px;
+          span {
           display: block;
           color: #6b6b84;
           text-transform: uppercase;
           margin-top: -2px;
           margin-bottom: 5px;
           font-size: 13px;
-        }
+        }}
 
         a {
           color: $desc-color;
@@ -112,7 +117,7 @@
         line-height: 26px;
         font-family: var(--font_rr);
         padding-bottom: 10px;
-        transition: all 0.3s ease;
+        @include Transition(0.3s);
 
         &:last-child {
           padding-right: 0;
@@ -136,7 +141,7 @@
           display: block;
           text-align: center;
           line-height: 40px;
-          transition: all 0.5s ease;
+          @include Transition(0.5s);
           font-size: 18px;
         }
 
@@ -172,7 +177,7 @@
         margin-bottom: 10px;
         display: inline-block;
         background-color: #f4f4f4;
-        transition: all 0.3s ease;
+        @include Transition(0.3s);
         border-radius: 3px;
         line-height: 22px;
         cursor: pointer;
@@ -199,7 +204,7 @@
       li {
         margin-bottom: 10px;
         position: relative;
-        transition: all 0.3s ease;
+        @include Transition(0.3s);
         padding-left: 20px;
 
         &::before {

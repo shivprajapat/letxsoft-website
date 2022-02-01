@@ -43,7 +43,7 @@
       padding: 20px;
       position: relative;
       border-radius: 0 0 5px 5px;
-      transition: all 0.3s ease;
+      @include Transition(0.3s);
       &_meta {
         ul {
           margin-bottom: 8px;
@@ -87,7 +87,7 @@
               border: 1px solid $gray;
               border-radius: 100%;
               @include flex(center, center, null);
-              transition: all 0.3s ease;
+              @include Transition(0.3s);
               &:hover {
                 background-color: $aqua;
                 color: $white;

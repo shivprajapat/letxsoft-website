@@ -24,7 +24,7 @@
         color: $aqua;
         font-size: 40px;
         display: inline-block;
-        transition: all 0.5s ease;
+        @include Transition(0.5s);
       }
     }
     h3 {
@@ -34,7 +34,7 @@
       margin: 0 0 15px;
       line-height: 30px;
       text-transform: capitalize;
-      transition: all 0.5s ease;
+      @include Transition(0.5s);
       font-family: var(--font_rm);
     }
     .checklist {
@@ -45,7 +45,7 @@
         line-height: 30px;
         color: $btn-color;
         margin: 0;
-        transition: all 0.5s ease;
+        @include Transition(0.5s);
         font-weight: 400;
         font-family: var(--font_rm);
         text-align: left;

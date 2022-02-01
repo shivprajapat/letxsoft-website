@@ -1,7 +1,8 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-export default function ServiceCard({ icon, animation, name, desc }) {
+export default function ServiceCard({ icon, animation, name, desc,id }) {
   return (
     <div className="inner-box" data-aos={animation} data-aos-duration="1000">
       <div className="icon-box">
@@ -11,9 +12,9 @@ export default function ServiceCard({ icon, animation, name, desc }) {
         <a href="#regin">{name}</a>
       </h5>
       <div className="text">{desc}</div>
-      <a className="arrow" href="#regin">
+      <Link className="arrow" Link to={`/service-details/${id}`}>
         <FaArrowRight />
-      </a>
+      </Link>
     </div>
   );
 }

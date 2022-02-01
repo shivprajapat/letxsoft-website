@@ -1,21 +1,44 @@
-import React from 'react'
-import { FaSearch } from "react-icons/fa";
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import BlogSearchInput from '../../../components/BlogSearchInput';
+import { Blogdata } from "./data";
+
 export default function BlogRight() {
+  const [searchValue, setSearchValue] = useState("");
+  console.log(searchValue);
+  const filterNames = ({ title }) => {
+    return title.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1;
+  };
+
   return (
     <div className='right-section clearfix'>
       <div className="blog-box-tab">
         <h3 className='ttl'>Search</h3>
-        <form>
-          <div className="form-group">
-            <input type="text" className="form-control" /></div>
-          <button type="submit" className="btn"><FaSearch /></button>
-        </form>
+        <BlogSearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className="blog-box-tab">
-        <h3 className='ttl'>Follow Us</h3>
+        <h3 className='ttl'>Popular Posts</h3>
         <div className='blog-post'>
-          <article >
+          {
+            Blogdata.cardData.filter(filterNames).map((blog) => {
+              const { title, img, date, id } = blog;
+              return (
+                <article key={id}>
+                  <div className="item">
+                    <Link to={`/blog-details/${id}`} className="thumb">
+                      <img src={img} alt="" />
+                    </Link>
+                    <div className="info">
+                      <span>{date}</span>
+                      <Link to={`/blog-details/${id}`}>{title}</Link>
+                    </div>
+                  </div>
+                </article>
+              )
+            })
+          }
+
+          {/* <article >
             <div className="item">
               <a className="thumb" href="/blog-details/#">
                 <img src="https://rewy-gatsby.envytheme.com/static/blog-img9-6c1bc8bf646b7143c670f3a587d5d751.jpg" alt="" />
@@ -50,19 +73,7 @@ export default function BlogRight() {
               </div>
 
             </div>
-          </article>
-          <article >
-            <div className="item">
-              <a className="thumb" href="/blog-details/#">
-                <img src="https://rewy-gatsby.envytheme.com/static/blog-img9-6c1bc8bf646b7143c670f3a587d5d751.jpg" alt="" />
-              </a>
-              <div className="info">
-                <span>June 10, 2020</span>
-                <a href="/blog-details/#">The Data Surrounding Higher Education</a>
-              </div>
-
-            </div>
-          </article>
+          </article> */}
         </div>
       </div>
       <div className="blog-box-tab">

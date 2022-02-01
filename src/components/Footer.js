@@ -2,9 +2,6 @@ import React from "react";
 import {
   FaAngleDoubleRight,
   FaMapMarkerAlt,
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
   FaRegClock,
 } from "react-icons/fa";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
@@ -29,23 +26,6 @@ export default function Footer() {
                       </h5>
                       <p>Monday to Saturday- 10 A.M to 7 P.M </p>
                     </div>
-                    <ul className="social-box list-unstyled mb-0">
-                      <li>
-                        <a href="https://www.facebook.com/helpfulinsightsolution/">
-                          <FaFacebookF />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://in.linkedin.com/in">
-                          <FaTwitter />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com">
-                          <FaInstagram />
-                        </a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
                 <div className="footer-column col-lg-5 col-md-6 col-sm-12">
@@ -59,7 +39,7 @@ export default function Footer() {
                         </a>
                       </li>
                       <li>
-                        <a href="#regin">
+                        <a href="/blog">
                           <FaAngleDoubleRight />
                           Services
                         </a>
@@ -92,7 +72,7 @@ export default function Footer() {
                 <div className="footer-column col-lg-6 col-md-6 col-sm-12">
                   <div className="footer-widget news-widget">
                     <h5>Services</h5>
-                    <ul className="list-link list-unstyled mb-0">
+                    {/* <ul className="list-link list-unstyled mb-0">
                       <li>
                         <a href="#regin">
                           <FaAngleDoubleRight /> Cross Platform
@@ -128,7 +108,7 @@ export default function Footer() {
                           <FaAngleDoubleRight /> E commerce Development
                         </a>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <div className="footer-column col-lg-6 col-md-6 col-sm-12">
@@ -140,10 +120,10 @@ export default function Footer() {
                           <FaMapMarkerAlt />
                         </span>
                         <strong>Address</strong>
-                        <a href="https://g.page/HelpfulInsight?share">
+                        <a href="/">
                           {" "}
                           s-1 top floor pradhan-tower, sec-5, near mahindra
-                          showroom,tonk road, jaipur{" "}
+                          showroom,tonk road, jaipur
                         </a>
                       </li>
                       <li>
@@ -151,14 +131,14 @@ export default function Footer() {
                           <HiPhone />
                         </span>
                         <strong>Phone</strong>
-                        <a href="tel:+919001721837">+91 123456789</a>
+                        <a href="tel:+123456789">+91 123456789</a>
                       </li>
                       <li>
                         <span className="icon">
                           <HiOutlineMail />
                         </span>
                         <strong>E-Mail</strong>
-                        <a href="mailto:info@helpfulinsightsolution.com">
+                        <a href="mailto:info@letxsoft.com">
                           info@letxsoft.com{" "}
                         </a>
                       </li>

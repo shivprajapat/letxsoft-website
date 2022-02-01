@@ -9,7 +9,7 @@ const About = () => {
   return (
     <React.Fragment>
       <InnerHeader />
-      <InnerBanner heading="About" />
+      <InnerBanner heading="About"  name="Home" subname="About"/>
       <div id="about" className="section_padding">
         <Container>
           <Row className="clearfix align-items-center">

@@ -37,7 +37,8 @@
         li {
           line-height: 30px;
           padding: 7px 0px;
-        }
+          display: inline-block;
+        width: 10%;}
         div {
           padding: 7px 0 !important;
         }
@@ -251,7 +252,7 @@
   }
   .blog-post {
     .item {
-      .thumb img{
+      .thumb img {
         width: 40px;
         height: 40px;
       }
@@ -263,7 +264,19 @@
       }
     }
   }
-  .right-section .blog-box-tab{
+  .right-section .blog-box-tab {
     margin-bottom: 15px;
   }
+  .technologies-features {
+    span {
+      display: block !important;
+      width: 100% !important;
+    }
+  }
+  .blog-details .ServiceBox-tab {
+    .user-sec .col-lg-4 {
+      margin-bottom: 20px;
+    }
+  }
 }
+

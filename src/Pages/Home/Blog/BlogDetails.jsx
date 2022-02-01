@@ -3,7 +3,7 @@ import InnerBanner from "../../../components/InnerBanner";
 
 import InnerHeader from "../../../components/Header/InnerHeader";
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { FaRegCalendarAlt, FaUserAlt} from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
 import BlogRight from './BlogRight';
 import { Blogdata } from "./data";
 import Comment from '../../../components/comment/Comment'
@@ -14,11 +14,10 @@ const BlogDetails = (props) => {
   let getId = props.match.params.id;
   const getData = Blogdata.cardData[getId - 1];
 
-  console.log(getData);
   return (
     <React.Fragment>
       <InnerHeader />
-      <InnerBanner heading="Blog Details" />
+      <InnerBanner heading="Blog Details"  name="Home" subname="Blog Details"/>
       <div className='blog-details section_padding'>
         <Container>
           <Row>
@@ -32,32 +31,9 @@ const BlogDetails = (props) => {
                     <div className="user-tab">
                       <div className="user-sec">
                         <Row>
-                          <Col lg={3} md={3} sm={4}>
-                          <Card>
-                            <div className='icon'><FaUserAlt /></div>
-                              <div className='time'>
-                              <span>CATEGORY</span>
-                                <a href="/">Fashion</a>
-                              </div>
-                            </Card>
-                          </Col>
-                          <Col lg={3} md={3} sm={4}>
-                            <Card>
-                              <div className='icon'><FaRegCalendarAlt /></div>
-                              <div className='time'>
-                              <span>LAST UPDATED</span>
-                                <a href="/">Aug 31, 2021</a>
-                              </div></Card>
-                          </Col>
-                          <Col lg={3} md={3} sm={4}>
-                            <Card>
-                              <div className='icon'><FaRegCalendarAlt /></div>
-                              <div className='time'>
-                                <span>VIEW</span>
-                                <a href="/">813,454</a>
-                              </div>
-                            </Card>
-                          </Col>
+                          <UserAction title='CATEGORY' second='Fashion' />
+                          <UserAction title='LAST UPDATED' second='Aug 31, 2021' />
+                          <UserAction title='VIEW' second='813,454' />
                         </Row>
                       </div>
                     </div>
@@ -70,7 +46,7 @@ const BlogDetails = (props) => {
                 </div>
               </div>
               <div className='details-inner-data section_padding'>
-<Auther/>
+                <Auther />
                 <Comment />
                 <CommentForm />
               </div>
@@ -87,3 +63,18 @@ const BlogDetails = (props) => {
 }
 
 export default BlogDetails
+
+
+const UserAction = (props) => {
+  return (
+    <Col lg={4} md={4}>
+      <Card>
+        <div className='icon'><FaRegCalendarAlt /></div>
+        <div className='time'>
+          <span>{props.title}</span>
+          <a href="/">{props.second}</a>
+        </div>
+      </Card>
+    </Col>
+  )
+}

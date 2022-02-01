@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React,{useState} from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import InnerBanner from "../../components/InnerBanner";
+import InnerHeader from "../../components/Header/InnerHeader";
 import { FaPlus, FaUserFriends, FaRegCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Heading from "../../../components/Heading";
+import { Blogdata } from "../Home/Blog/data";
 
-import { Blogdata } from "./data";
-export default function Blog() {
-  const [readMore] = useState('');
-  return (
-    <section className="blog section_padding">
-      <Container>
-        <Heading heading="WE PROVIDE BETTER" top_heading="Blog" linkTag='blog' />
-        <Row className="justify-content-center">
+const Blog = () => {
+    const [readMore] = useState('');
+    return (
+        <React.Fragment>
+            <InnerHeader />
+            <InnerBanner heading="Blog"  name="Home" subname="Blog"/>
+            <div id="blog" className="section_padding">
+                <Container>
+                <Row className="justify-content-center">
           {Blogdata.cardData.map((blogitem, index) => {
             const { title, id, animation, img, desc, date } = blogitem;
             return (
@@ -66,20 +69,11 @@ export default function Blog() {
 
 
         </Row>
-        <div className="text-center">
-        <div className="btn-block"><a className="blue_btn" href="/blog">View More</a></div>
-        </div>
+                </Container>
+            </div>
+        </React.Fragment>
 
-        {/* <div>
-          <Pagination>
-            <Pagination.Prev>Prev</Pagination.Prev>
-            <Pagination.Item>{1}</Pagination.Item>
-            <Pagination.Item active>{2}</Pagination.Item>
-            <Pagination.Ellipsis />
-            <Pagination.Next disabled>Next</Pagination.Next>
-          </Pagination>
-        </div> */}
-      </Container>
-    </section>
-  );
-}
+    )
+};
+
+export default Blog;

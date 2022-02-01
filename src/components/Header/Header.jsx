@@ -24,6 +24,7 @@ export default function Header() {
               <Link to="/">Letxsoft</Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
                 <li>
@@ -44,6 +45,11 @@ export default function Header() {
                 <li>
                   <NavLink activeClassName="active" to="/service">
                     Services
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink activeClassName="active" to="/blog">
+                    Blog
                   </NavLink>
                 </li>
                 <li>

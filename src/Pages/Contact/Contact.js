@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <React.Fragment>
       <InnerHeader />
-      <InnerBanner heading="Contact" />
+      <InnerBanner heading="Contact"  name="Home" subname="Contact"/>
       <div id="contact" className="section_padding">
         <Container>
           <Row>
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div className="info-tab skype">
                   <h5>Our Skype ID</h5>
-                  <a href="/" className="btn style_3">
+                  <a href="https://join.skype.com/invite/address" className="btn style_3">
                     <abbr>
                       <FaSkype />
                     </abbr>

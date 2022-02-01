@@ -14,7 +14,7 @@ export default function Services() {
           <div className="text-center">
             <Heading
               heading="We deal with the aspects of professional IT Services"
-              top_heading="WHO WE ARE"
+              top_heading="WHO WE ARE" linkTag='service'
             />
           </div>
           <Row>
@@ -27,7 +27,7 @@ export default function Services() {
                   className="service-block d-flex card_space"
                   key={index}
                 >
-                  <ServiceCard {...item} />
+                  <ServiceCard {...item}  />
                 </Col>
               );
             })}

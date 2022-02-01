@@ -5,6 +5,7 @@
   background-size: cover;
   overflow-x: hidden;
 }
+//   @include bgImage("/images/1.png");
 
 @mixin flex($items, $justify, $direction) {
   display: -webkit-box;
@@ -16,6 +17,7 @@
   justify-content: $justify;
   flex-direction: $direction;
 }
+
 // @include flex(center, center, null);
 
 @mixin Transition($time) {
@@ -25,3 +27,5 @@
   -ms-transition: all $time ease;
   -o-transition: all $time ease;
 }
+
+// @include Transition(0.5s);

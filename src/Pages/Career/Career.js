@@ -8,7 +8,7 @@ const Career = () => {
   return (
     <React.Fragment>
       <InnerHeader />
-      <InnerBanner heading="Career" />
+      <InnerBanner heading="Career"  name="Home" subname="Career"/>
       <div id="career">
         <Working />
         <OurOffice />

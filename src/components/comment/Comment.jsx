@@ -8,7 +8,7 @@ import { commentdata } from './commentdata'
 const Comment = () => {
     const [activecomment] = useState(commentdata[0]);
 
-    console.log(commentdata);
+    // console.log(commentdata);
     return (
         <div className='comment'>
             <Row>

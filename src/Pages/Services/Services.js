@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <React.Fragment>
       <InnerHeader />
-      <InnerBanner heading="Services" />
+      <InnerBanner heading="Services"  name="Home" subname="Services"/>
       <div id="services" className="section_padding">
       <Service />
       </div>

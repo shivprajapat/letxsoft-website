@@ -9,7 +9,7 @@ export default function About() {
         <Row>
           <Col lg={5} md={5} data-aos="fade-right" data-aos-duration="1000">
             <div className="about_sec">
-              <Heading heading="about" top_heading="About" />
+              <Heading heading="about" top_heading="About" linkTag='about' />
               <div className="about_txt">
                 <p>
                   Letxsoft Technology is one of the well-known leaders in the

@@ -33,55 +33,38 @@
       text-transform: capitalize;
       font-family: "Lato";
     }
-    .social-box {
-      position: relative;
-      li {
-        position: relative;
-        margin-right: 8px;
-        display: inline-block;
-        a {
-          position: relative;
-          width: 40px;
-          height: 40px;
-          border-radius: 100%;
-          text-align: center;
-          line-height: 40px;
-          display: inline-block;
-          background-color: $white;
-          -webkit-transition: all 300ms ease;
-          -ms-transition: all 300ms ease;
-          -o-transition: all 300ms ease;
-          -moz-transition: all 300ms ease;
-          transition: all 300ms ease;
-          svg {
-            width: 20px;
-            height: 20px;
-            fill: $aqua;
-          }
-        }
-      }
-    }
   }
   .footer-widget {
     position: relative;
     z-index: 1;
     h5 {
       position: relative;
+      font-size: 20px;
+      font-weight: 700;
       color: $white;
-      line-height: 1.2em;
-      margin-bottom: 10px;
-      padding-bottom: 20px;
-      text-transform: uppercase;
-      font-weight: 600;
+      line-height: 30px;
+      padding-bottom: 15px;
+      margin-bottom: 30px;  
       font-family: var(--font_rr);
 
       &:before {
         position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 2px;
+        margin-right: 6px;
+        background-color: $white;
         content: "";
-        left: 0px;
-        bottom: 0px;
-        height: 1px;
-        width: 30px;
+      }
+      &::after {
+        position: absolute;
+        left: 65px;
+        bottom: -2px;
+        height: 6px;
+        width: 6px;
+        content: "";
+        border-radius: 50%;
         background-color: $white;
       }
     }

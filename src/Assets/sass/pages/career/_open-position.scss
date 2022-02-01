@@ -37,7 +37,7 @@
       font-size: 16px;
       display: inline-block;
       border: solid 2px;
-      transition: all 0.4s ease;
+      @include Transition(0.4s);
       text-transform: capitalize;
       line-height: 1;
       font-family: "Federo", sans-serif;

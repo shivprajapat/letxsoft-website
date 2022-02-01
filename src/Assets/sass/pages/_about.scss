@@ -28,7 +28,7 @@
     background: $white;
     padding: 30px;
     box-shadow: $lightblack 0px 20px 25px -5px, $lightblack 0px 10px 10px -5px;
-    transition: 0.5s;
+    @include Transition(0.5s);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -42,7 +42,7 @@
     &:hover {
       background: $aqua;
       transform: translateY(-10px);
-      transition: 0.5s;
+      @include Transition(0.5s);
       i,
       p,
       span {
