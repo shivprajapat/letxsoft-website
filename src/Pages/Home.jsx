@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet";
 const Home = () => {
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
-        <title>Home || Page</title>
-        <meta name="description" content="Home Page" />
+      <Helmet>
+        <title>Letxsoft technology: We Build Smart Solution</title>
+        <meta name="description" content="Letxsoft technology: We Build Smart Solution" />
       </Helmet>
       <Header />
       <HomeBanner />

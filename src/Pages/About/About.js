@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
+      <Helmet>
         <title>About || Page</title>
         <meta name="description" content="About Page" />
       </Helmet>
@@ -22,21 +22,18 @@ const About = () => {
               <div className="sec-title">
                 <Heading
                   heading="Web and Mobile App Development Company"
-                  top_heading="About us"
-                />
+                  top_heading="About us"/>
               </div>
               <div className="inner-column">
                 <div className="text pb-4">Letxsoft Technology is one of the well-known leaders in the technology revolution and provides complete IT solutions since 2020. The company provides the best services in Mobile application, Desktop application, Website development, Designing & Digital marketing. We are a team of highly professional experts. We are rigorously committed to quality and professionalism. We always seek an opportunity to help & Consult with any requirements, rather than selling our services to anyone.</div>
               </div>
             </Col>
-
             <Col lg={5} className="text-center">
               <div className="img1 d-lg-block up-down">
                 <img
                   src={aboutimg}
                   alt="Frontend Development"
-                  className="img-fluid"
-                />
+                  className="img-fluid"/>
               </div>
             </Col>
           </Row>

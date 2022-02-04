@@ -6,9 +6,6 @@
   background: -moz-radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
   background: radial-gradient(circle farthest-corner at center center, $aqua 0%, $blue 100%);
   overflow: hidden;
-  .widgets-section {
-    position: relative;
-  }
   .logo-widget {
     position: relative;
     .logo {
@@ -44,7 +41,7 @@
       color: $white;
       line-height: 30px;
       padding-bottom: 15px;
-      margin-bottom: 30px;  
+      margin-bottom: 30px;
       font-family: var(--font_rr);
 
       &:before {
@@ -146,7 +143,7 @@
     height: 100%;
     opacity: 0.05;
   }
-  .spinning-circle-top {
+  .circle-top {
     width: 530px;
     height: 530px;
     top: -52%;
@@ -158,7 +155,7 @@
     animation: rotated 35s infinite linear;
     overflow: hidden;
   }
-  .spinning-circle-bottom {
+  .circle-bottom {
     width: 350px;
     overflow: hidden;
     height: 350px;

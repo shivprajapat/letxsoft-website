@@ -16,7 +16,8 @@ const TopBar = () => {
             <Col md={6} lg={5} className="top-header-left">
               <ul>
                 <li>
-                  <span>Email us:</span>info@letxsoft.com
+                  <span>Email us:</span>
+                  <a href="mailto:info@letxsoft.com">info@letxsoft.com</a>
                 </li>
                 <li>
                   <span>address:</span>Jaipur India

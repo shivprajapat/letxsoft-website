@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 const Career = () => {
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
+      <Helmet>
         <title>Career || Page</title>
         <meta name="description" content="Career Page" />
       </Helmet>

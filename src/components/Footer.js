@@ -1,162 +1,106 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import {
-  FaAngleDoubleRight,
-  FaMapMarkerAlt,
-  FaRegClock,
+  FaMobileAlt,
+  FaMapMarkerAlt, FaAngleRight,
+  FaRegClock, FaRegEnvelope
 } from "react-icons/fa";
-import { HiOutlineMail, HiPhone } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer className="main-footer">
-      <div className="container">
-        <div className="widgets-section">
-          <div className="row">
-            <div className="big-column col-lg-6 col-md-12 col-sm-12">
-              <div className="row clearfix">
-                <div className="footer-column col-lg-7 col-md-6 col-sm-12">
-                  <div className="footer-widget logo-widget">
-                    <div className="logo">
-                      <a href="#regin">Letxsoft technology</a>
-                    </div>
-                    <div className="text">
-                      <h5>
-                        <FaRegClock /> opening hours
-                      </h5>
-                      <p>Monday to Saturday- 10 A.M to 7 P.M </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="footer-column col-lg-5 col-md-6 col-sm-12">
-                  <div className="footer-widget links-widget">
-                    <h5>Quick Links</h5>
-                    <ul className="list-link list-unstyled mb-0">
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight />
-                          Who We Are
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/blog">
-                          <FaAngleDoubleRight />
-                          Services
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight />
-                          Our Portfolio
-                        </a>
-                      </li>
-                      <li>
-                        <Link to="/contact">
-                          <FaAngleDoubleRight />
-                          Contact Us
-                        </Link>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight />
-                          Free Consultation
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+      <Container>
+        <Row className="clearfix">
+          <Col lg={4} md={6} sm={12} className="footer-column">
+            <div className="footer-widget logo-widget">
+              <div className="logo">
+                <Link to="/">Letxsoft technology</Link>
+              </div>
+              <div className="text">
+                <h5>
+                  <FaRegClock /> opening hours
+                </h5>
+                <p>Monday to Saturday- 10 A.M to 7 P.M </p>
               </div>
             </div>
-            <div className="big-column col-lg-6 col-md-12 col-sm-12">
-              <div className="row clearfix">
-                <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget news-widget">
-                    <h5>Services</h5>
-                    {/* <ul className="list-link list-unstyled mb-0">
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> Cross Platform
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> Hybrid
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> PHP Development
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> CMS Development
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> UI/UX Design
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> PSD to HTML
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#regin">
-                          <FaAngleDoubleRight /> E commerce Development
-                        </a>
-                      </li>
-                    </ul> */}
-                  </div>
-                </div>
-                <div className="footer-column col-lg-6 col-md-6 col-sm-12">
-                  <div className="footer-widget contact-widget">
-                    <h5>Contact Us</h5>
-                    <ul className="list-unstyled mb-0">
-                      <li>
-                        <span className="icon">
-                          <FaMapMarkerAlt />
-                        </span>
-                        <strong>Address</strong>
-                        <a href="/">
-                          {" "}
-                          s-1 top floor pradhan-tower, sec-5, near mahindra
-                          showroom,tonk road, jaipur
-                        </a>
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <HiPhone />
-                        </span>
-                        <strong>Phone</strong>
-                        <a href="tel:+123456789">+91 123456789</a>
-                      </li>
-                      <li>
-                        <span className="icon">
-                          <HiOutlineMail />
-                        </span>
-                        <strong>E-Mail</strong>
-                        <a href="mailto:info@letxsoft.com">
-                          info@letxsoft.com{" "}
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          </Col>
+          <Col lg={2} md={6} sm={12} className="footer-column">
+            <div className="footer-widget links-widget">
+              <h5>Explore Links</h5>
+              <ul className="list-link list-unstyled mb-0">
+                <li>
+                  <Link to="/"><FaAngleRight />Home</Link>
+                </li>
+                <li>
+                  <Link to="/about"><FaAngleRight />About</Link>
+                </li>
+                <li>
+                  <Link to="/portfolio"><FaAngleRight />Our Portfolio</Link>
+                </li>
+                <li>
+                  <Link to="/blog"><FaAngleRight />Our Blog</Link>
+                </li>
+                <li>
+                  <Link to="/contact"><FaAngleRight />Contact Us</Link>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+          <Col lg={2} md={6} sm={12} className="footer-column">
+            <div className="footer-widget news-widget">
+              <h5>Services</h5>
+              <ul className="list-link list-unstyled mb-0">
+                <li>
+                  <Link to="/service">
+                    <FaAngleRight /> Our Services
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Col>
+          <Col lg={4} md={6} sm={12} className="footer-column">
+            <div className="footer-widget contact-widget">
+              <h5>Contact Us</h5>
+              <ul className="list-unstyled mb-0">
+                <li>
+                  <span className="icon">
+                    <FaMapMarkerAlt />
+                  </span>
+                  <strong>Address</strong>
+                  <a href="/">
+                    s-1 top floor pradhan-tower, sec-5, near mahindra
+                    showroom,tonk road, jaipur
+                  </a>
+                </li>
+                <li>
+                  <span className="icon">
+                    <FaMobileAlt />
+                  </span>
+                  <strong>Phone</strong>
+                  <a href="tel:+91-9818155498">+91-9818155498</a>
+                </li>
+                <li>
+                  <span className="icon">
+                    <FaRegEnvelope />
+                  </span>
+                  <strong>E-Mail</strong>
+                  <a href="mailto:info@letxsoft.com">
+                    info@letxsoft.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </Col>
+        </Row>
+      </Container>
       <div className="footer-bottom text-center">
         <div className="copyright">
-          Copyright © 2022 <a href="/">Letxsoft Technology</a>. All Rights Reserved.
+          Copyright © 2022 <Link to="/">Letxsoft Technology</Link>. All Rights Reserved.
         </div>
       </div>
-      <div className="spinning-circle-top"></div>
-      <div className="spinning-circle-bottom"></div>
+      <div className="circle-top"></div>
+      <div className="circle-bottom"></div>
     </footer>
   );
 }

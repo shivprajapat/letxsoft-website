@@ -16,8 +16,8 @@ const HomeBanner = () => {
         <Row>
           <Col lg={6}>
             <div className="home_content">
-              <h1>software development company in india</h1>
-              <p>build for smart future</p>
+              <h1>Complete solution for all your tech problems</h1>
+              <p>We Build Smart Solution</p>
               <div className="btn-block">
                 <Link to="/service" className="home_btn">
                   our work

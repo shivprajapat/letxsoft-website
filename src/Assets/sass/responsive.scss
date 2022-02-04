@@ -5,15 +5,31 @@
   .service-box-titel h2 {
     font-size: 45px;
   }
+  .services-section .service-block h3 a {
+    font-size: 20px;
+  }
+  // dashborad
+  .login-details .post-section .card {
+    padding: 0 50px;
+  }
 }
-
 @media (min-width: 1400px) {
   #homeSlider {
     padding-top: 250px;
     padding-bottom: 0;
   }
+  #dashborad {
+    .right_section .dheader {
+      margin-bottom: 130px;
+    }
+    .job-management,
+    .postlist-section {
+      .btn-block {
+        padding-top: 0;
+      }
+    }
+  }
 }
-
 @media (min-width: 1368px) and (max-width: 1600px) {
   .container {
     max-width: 1400px !important;
@@ -22,6 +38,34 @@
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 1300px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .main-testimonial-slider {
+    margin-top: 40px;
+  }
+  .card_space {
+    margin-bottom: 30px;
+  }
+  .services-section {
+    padding: 40px 0;
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .home_content {
+    max-width: 100% !important;
+    text-align: center;
+  }
+  .home_img {
+    padding-top: 40px;
+    margin: auto;
+  }
+
+  .career_details_section {
+    .detail_form_tab {
+      margin-top: 20px;
+    }
   }
 }
 @media (max-width: 991px) {
@@ -38,7 +82,8 @@
           line-height: 30px;
           padding: 7px 0px;
           display: inline-block;
-        width: 10%;}
+          width: 10%;
+        }
         div {
           padding: 7px 0 !important;
         }
@@ -54,20 +99,36 @@
   .left-section .goback {
     margin-bottom: 20px;
   }
-}
-@media (max-width: 992px) {
-  .home_content {
-    max-width: 100% !important;
-    text-align: center;
-  }
-  .home_img {
-    padding-top: 40px;
-    margin: auto;
-  }
+  #dashborad {
+    #sidebar {
+      width: 80px;
+      .pro-sidebar-inner {
+        .closemenu {
+          display: none;
+        }
+      }
+    }
 
-  .career_details_section {
-    .detail_form_tab {
-      margin-top: 20px;
+    .right_section {
+      margin-left: 80px;
+      width: calc(100% - 80px);
+      .dheader {
+        margin-bottom: 135px;
+        .header_iner {
+          width: calc(100% - 80px);
+          padding: 30px 10px;
+          &_right_notification {
+            display: flex;
+            margin: 0;
+            li {
+              margin-right: 15px;
+              span {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -155,17 +216,45 @@
   .left-section .ServiceBox-tab .img-wrap {
     height: 250px !important;
   }
-}
-@media (max-width: 1024px) {
-  .main-testimonial-slider {
-    margin-top: 40px;
+
+  // dashborad
+  .login-details .post-section .card {
+    padding: 0 20px;
   }
-  .card_space {
-    margin-bottom: 30px;
-  }
-  .services-section {
-    padding: 40px 0;
-    margin: 0;
+  #dashborad {
+    #sidebar {
+      width: 80px;
+      .pro-sidebar-inner {
+        .closemenu {
+          display: none;
+        }
+      }
+    }
+    .right_section {
+      margin-left: 80px;
+      width: calc(100% - 80px);
+      .dheader {
+        margin-bottom: 70px;
+        .header_iner {
+          width: calc(100% - 80px);
+          padding: 5px 10px;
+          &_right_notification {
+            display: flex;
+            margin: 0;
+            li {
+              margin-right: 15px;
+              span {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .profile_info .dropdown .avatar {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 576px) {
@@ -209,7 +298,6 @@
     margin: initial;
     max-width: inherit;
   }
-
   .about {
     margin-top: -60px;
     .about_img {
@@ -235,12 +323,23 @@
   .scrollbtn button {
     right: 4%;
     bottom: 2%;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    line-height: 20px;
   }
   .main-footer .contact-widget li:last-child {
     margin-bottom: 0;
   }
   .details-inner-data {
+    padding-top: 20px;
     padding-bottom: 0;
+    .comment {
+      padding-bottom: 20px;
+    }
+    #comment-form {
+      padding-top: 20px;
+    }
   }
   #comment-form {
     .form-row {
@@ -278,5 +377,28 @@
       margin-bottom: 20px;
     }
   }
-}
+  // dashborad
 
+  .login-details .post-section .card {
+    padding: 0 10px;
+  }
+  #dashborad {
+    .dheader .profile_info .dropdown .dropdown-menu {
+      left: -170px;
+      margin: 0;
+    }
+    .heading_tab {
+      margin-bottom: 10px;
+      .heading {
+        margin-bottom: 0;
+      }
+    }
+
+    .blog-details {
+      padding: 0;
+    }
+    .pro-sidebar-header {
+      padding: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.right_section {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+  position: fixed;
+  height: 100vh;
+  // overflow-y: scroll;
+  &.active {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+    .header_iner {
+      width: calc(100% - 80px);
+    }
+  }
+  .right-tab {
+    overflow-y: auto;
+    height: 100%;
+  }
+  .bloglist {
+    // background-color: red;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

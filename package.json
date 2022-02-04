@@ -1,5 +1,6 @@
 {
   "name": "letxsoft",
+  "homepage": "https://www.letxsoft.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,20 +10,23 @@
     "@testing-library/user-event": "^12.8.3",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
     "gmail-send": "^1.8.14",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-countup": "^6.1.0",
     "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
+    "react-icons": "^4.3.1",
     "react-owl-carousel": "^2.3.3",
     "react-pro-sidebar": "^0.7.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
-    "typewriter-effect": "^2.18.2",
+    "react-tag-input-component": "^1.0.7",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

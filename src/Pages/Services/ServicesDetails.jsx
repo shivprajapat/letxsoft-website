@@ -9,12 +9,10 @@ const ServicesDetails = (props) => {
 
     let getId = props.match.params.id;
     const getData = data[getId - 1];
-
-    const { name, desc } = getData;
     console.log(getData);
     return (
         <React.Fragment>
-            <Helmet htmlAttributes>
+            <Helmet>
                 <title>Service Details || Page</title>
                 <meta name="description" content="Service Details Page" />
             </Helmet>
@@ -28,11 +26,10 @@ const ServicesDetails = (props) => {
                                 <Card>
                                     <div className="blog_img">
                                         <Card.Img variant="top" src={require('../../Assets/images/blog/01.png').default} />
-
                                     </div>
                                     <Card.Body>
-                                        <Card.Title>{name}</Card.Title>
-                                        <Card.Text>{desc}</Card.Text>
+                                        <h2 className='card-title'>{getData.title}</h2>
+                                        <Card.Text>{getData.desc}</Card.Text>
                                         <div className="card_second">
                                             <Row>
                                                 <Col lg={6} md={6}>
@@ -66,7 +63,7 @@ const Technologies = () => {
     return (
         <div className="services-contact-info">
             <Card>
-                <h3>Contact Info</h3>
+                <h3>Technologies That We Use</h3>
                 <div className="technologies-features">
                     <span>JavaScript</span>
                     <span>Python</span>

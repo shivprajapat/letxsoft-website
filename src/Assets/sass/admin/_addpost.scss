@@ -1,0 +1,102 @@
+.post-section {
+    background-color: $white;
+    box-shadow: 0 5px 40px 10px $shadow;
+    padding: 20px;
+    .card {
+        border: none;
+        .heading_tab {
+            margin-bottom: 20px;
+            .heading {
+                font-family: var(--font_kr);
+            }
+        }
+    }
+    .form-label {
+        font-family: var(--font_rr);
+        font-weight: 600;
+    }
+    .custom-select,
+    .form-control {
+        font-weight: 500;
+        color: $black;
+        font-family: var(--font_rr);
+        &::placeholder {
+            font-weight: 500;
+            color: $black;
+        }
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $aqua;
+        }
+    }
+    .editor-section {
+        height: 250px;
+        overflow-y: scroll;
+        .public-DraftEditorPlaceholder-inner,
+        span {
+            font-family: var(--font_rr);
+            font-weight: 500;
+            color: $black;
+        }
+    }
+    textarea {
+        resize: none;
+    }
+    .rti--container {
+        span {
+            background-color: $aqua;
+            color: $white;
+            padding: 3px;
+            font-family: var(--font_rr);
+            font-weight: 500;
+            text-transform: capitalize;
+            button {
+                font-size: 14px;
+                color: $white;
+            }
+        }
+
+        .rti--input {
+            &::placeholder {
+                font-family: var(--font_rr);
+                font-weight: 500;
+                color: $black;
+                text-transform: capitalize;
+            }
+        }
+        &:focus-within,
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $aqua;
+        }
+    }
+}
+.blog-list-sec {
+    .blog_sec {
+        &_img {
+            width: 100%;
+            height: 160px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .blog_sec_content {
+            padding: 20px;
+        }
+        h3 {
+            font-family: var(--font_kr);
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+            color: $desc-color;
+        }
+    }
+    .btn-blog {
+        width: 100px;
+        margin-left: auto;
+        @include flex(center, space-between, null);
+    }
+}

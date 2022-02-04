@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCaretRight, FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Card({
   icon,
@@ -33,9 +34,9 @@ export default function Card({
           <FaCaretRight /> {list4}
         </li>
       </ul>
-      <button>
+      <Link to='/'>
         <FaLongArrowAltRight />
-      </button>
+      </Link>
     </div>
   );
 }

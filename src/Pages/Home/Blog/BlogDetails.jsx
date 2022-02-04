@@ -17,7 +17,7 @@ const BlogDetails = (props) => {
 
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
+      <Helmet>
         <title>Blog Details || Page</title>
         <meta name="description" content="Blog Details Page" />
       </Helmet>
@@ -29,7 +29,7 @@ const BlogDetails = (props) => {
             <Col lg={8}>
               <div className='left-section clearfix'>
                 <div className='ServiceBox-tab d-flex'>
-                  <div className="card mb-4 text-left">
+                  <div className="card text-left">
                     <div className="img-wrap">
                       <img src={getData.img} className='img-fluid' alt="" />
                     </div>
@@ -43,7 +43,7 @@ const BlogDetails = (props) => {
                       </div>
                     </div>
                     <div className="card-body p-0">
-                      <h5 className="card-title">{getData.title}</h5>
+                      <h3 className="card-title">{getData.title}</h3>
                       <p className="card-text"><small className="text-muted">{getData.date}</small></p>
                       <p className="card-text">{getData.desc}</p>
                     </div>

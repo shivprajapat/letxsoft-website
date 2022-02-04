@@ -1,0 +1,69 @@
+.card-sec {
+    position: relative;
+    .btn-block {
+        text-align: right;
+        padding: 15px 0;
+        .btn {
+            background-color: $aqua;
+            color: $white;
+            font-family: var(--font_rr);
+        }
+    }
+    .btn {
+        font-family: var(--font_rr);
+        font-weight: 600;
+    }
+    .card {
+        padding: 20px;
+        border: 0;
+        box-shadow: 0 5px 40px 10px $shadow;
+        .heading_tab {
+            margin-bottom: 20px;
+            .heading {
+                font-family: var(--font_kr);
+            }
+        }
+        .table {
+            thead th {
+                border-width: 1px;
+                font-weight: 500;
+                font-size: 16px;
+                font-family: var(--font_rm);
+            }
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+            }
+            td {
+                vertical-align: middle;
+                font-weight: 500;
+                font-family: var(--font_rm);
+                &:first-child {
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: var(--font_rm);
+                }
+                p {
+                    margin-bottom: 0;
+                    width: 350px;
+                }
+            }
+        }
+        .table-striped tbody tr:nth-of-type(2n + 1) {
+            background-color: transparent;
+        }
+    }
+}
+
+.login-details {
+    position: relative;
+    height: 100vh;
+    @include flex(center, center, null);
+    .post-section {
+        box-shadow: none;
+        .card {
+            padding: 0 80px;
+        }
+    }
+}

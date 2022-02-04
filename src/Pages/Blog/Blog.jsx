@@ -11,7 +11,7 @@ const Blog = () => {
     const [readMore] = useState('');
     return (
         <React.Fragment>
-          <Helmet htmlAttributes>
+          <Helmet>
         <title>Blog || Page</title>
         <meta name="description" content="Blog Page" />
       </Helmet>
@@ -58,7 +58,7 @@ const Blog = () => {
                       </ul>
                     </div>
                     <div className="blog_sec_content_meta_txt">
-                      <h4>{title}</h4>
+                      <h3>{title}</h3>
                       <p>{readMore ? desc : `${desc.substring(0, 150)}...`}</p>
                       <Link to={`/blog-details/${id}`} className="btn_link">
                         <span>

@@ -40,7 +40,7 @@
         }
         .icon,
         .text,
-        h5 a,
+        h3 a,
         .icon-box {
           color: $white !important;
         }
@@ -65,7 +65,7 @@
         @include Transition(500ms);
         font-family: var(--font_rm);
       }
-      h5 {
+      h3 {
         margin-top: 22px;
         margin-bottom: 18px;
         a {

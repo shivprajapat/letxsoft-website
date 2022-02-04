@@ -16,7 +16,7 @@ import { Helmet } from "react-helmet";
 const Contact = () => {
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
+      <Helmet>
         <title>Contact Us || Page</title>
         <meta name="description" content="Contact Us Page" />
       </Helmet>

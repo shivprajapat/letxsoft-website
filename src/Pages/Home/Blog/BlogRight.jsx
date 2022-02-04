@@ -63,7 +63,6 @@ export default function BlogRight() {
           <li><Link to="/">(1) Tips (2)</Link></li>
         </ul>
       </div>
-
     </div>
   )
 }

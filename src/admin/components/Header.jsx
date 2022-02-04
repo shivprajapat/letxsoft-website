@@ -1,12 +1,15 @@
 import React from "react";
 import { FaSearch, FaRegBell, FaRegEnvelope } from "react-icons/fa";
 import { Row, Col, Form, Spinner } from "react-bootstrap";
-import Notification from "../dashborad/Notification";
-const DHeader = () => {
+import Notification from "./Notification";
+import { Link } from "react-router-dom";
+import { FaGripHorizontal, FaUserAlt } from "react-icons/fa";
+import { FiLogOut } from "react-icons/fi";
+
+const Header = () => {
   const [notificationtoggle, setNotificationToggle] = React.useState(false);
   const handleclick = () => {
     setNotificationToggle(!notificationtoggle);
-    // console.log(handleclick);
   };
   return (
     <div className="dheader">
@@ -20,14 +23,10 @@ const DHeader = () => {
                     <div className="search_field">
                       <Form>
                         <Form.Control
-                          type="text"
-                          placeholder="Search here..."
-                        />
+                          type="text" placeholder="Search here..." />
                       </Form>
+                      <button type="submit"><FaSearch /></button>
                     </div>
-                    <button type="submit">
-                      <FaSearch />
-                    </button>
                   </form>
                 </div>
               </div>
@@ -68,21 +67,37 @@ const DHeader = () => {
                   </li>
                 </div>
                 <div className="profile_info">
-                  <img
-                    src="https://www.kindpng.com/picc/m/113-1137263_doctor-good-happy-vector-clipart-doctors-and-transparent.png"
-                    alt="/user"
-                  />
-                  <div className="profile_info_iner">
-                    <div className="profile_author_name">
-                      <p>Neurologist </p>
-                      <h5>Dr. Robar Smith</h5>
-                    </div>
-                    <div className="profile_info_details">
-                      <a href="/">My Profile </a>
-                      <a href="/">Settings</a>
-                      <a href="/">Log Out </a>
-                    </div>
-                  </div>
+                  <ul>
+                    <li className="dropdown ml-2">
+                      <div className="rounded-circle" role="button" id="dropdownUser"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div className="avatar">
+                          <img src={require('../../Assets/images/user.jpeg').default} alt="avatar" />
+                        </div>
+                      </div>
+                      <div className="dropdown-menu pb-2" aria-labelledby="dropdownUser">
+                        <div className="dropdown-item">
+                          <div className="user-info">
+                            <div className="avatar">
+                              <img src={require('../../Assets/images/user.jpeg').default} alt="avatar" />
+                            </div>
+                            <h5>Dammy User</h5>
+                          </div>
+                        </div>
+                        <ul>
+                          <li className="dropdown-item">
+                            <span><FaUserAlt /></span>My Profile
+                          </li>
+                          <li className="dropdown-item">
+                            <span><FaGripHorizontal /></span>Settings
+                          </li>
+                          <li className="dropdown-item">
+                            <Link to="/dashboard/logout"><span><FiLogOut /></span>Log Out</Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -93,4 +108,4 @@ const DHeader = () => {
   );
 };
 
-export default DHeader;
+export default Header;

@@ -38,7 +38,7 @@ const CareerDetails = (props) => {
   console.log(getData);
   return (
     <React.Fragment>
-      <Helmet htmlAttributes>
+      <Helmet>
         <title>Career Details || Page</title>
         <meta name="description" content="Career Details Page" />
       </Helmet>
