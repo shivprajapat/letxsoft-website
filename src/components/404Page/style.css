@@ -1,8 +1,6 @@
 .not-found-header .head-inner {
     height: 100vh;
     text-align: center;
-}
-.head-inner {
     display: table;
     height: 700px;
     width: 100%;
@@ -12,7 +10,7 @@
     display: table-cell;
     vertical-align: middle;
     padding-top: 70px;
-    color: #fff;
+    font-weight: 600;
 }
 .not-found-header .text-effect {
     font-size: 15rem;
@@ -20,6 +18,7 @@
     text-transform: uppercase;
     position: relative;
     width: 100%;
+    font-family: "Roboto-Regular";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,6 +100,8 @@
 .not-found-header .head-txt h1 {
     font-size: 50px;
     margin-top: 30px;
+    font-family: "Roboto-Regular";
+    font-weight: 600;
 }
 
 .not-found-header .dot1,

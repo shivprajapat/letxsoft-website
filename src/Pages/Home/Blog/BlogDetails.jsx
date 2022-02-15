@@ -22,7 +22,7 @@ const BlogDetails = (props) => {
         <meta name="description" content="Blog Details Page" />
       </Helmet>
       <InnerHeader />
-      <InnerBanner heading="Blog Details"  name="Home" subname="Blog Details"/>
+      <InnerBanner heading="Blog Details" name="Home" subname="Blog Details" />
       <div className='blog-details section_padding'>
         <Container>
           <Row>

@@ -16,7 +16,7 @@
         // position: relative;
         border-radius: 0px;
         margin: 0;
-        background: linear-gradient(45deg, #1dcfc0, $aqua) !important;
+        background: linear-gradient(45deg, $aquadark, $aqua) !important;
         border-radius: 0 0 10px 10px;
         &_serach {
             width: 310px;
@@ -88,7 +88,7 @@
             right: -7px;
             border-radius: 50%;
             top: -10px;
-            background-color: white;
+            background-color: $white;
             animation: notify-pulse 1s infinite;
         }
     }
@@ -149,7 +149,7 @@
                 p {
                     font-size: 16px;
                     font-weight: 400;
-                    color: #828bb2;
+                    color: $desc-color;
                     margin: 0;
                 }
                 h5 {
@@ -162,7 +162,7 @@
         }
         .nofity_footer {
             padding: 13px 20px;
-            background: #f5f7f9;
+            background: $lightwhite;
             border-radius: 0 0 10px 10px;
             .btn_1 {
                 background-color: $aqua;

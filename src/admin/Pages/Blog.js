@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Table, Row, Col, Card, Button } from 'react-bootstrap';
+import { Table, Row, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Heading from '../../components/Heading'
 import { PostData } from '../blog/PostData'
@@ -7,10 +7,7 @@ import { FaPlus } from "react-icons/fa";
 
 export default function Blog() {
     const [post, setPost] = useState(PostData)
-    const deletePost = (id) => {
-        setPost(post.filter(blogitem => blogitem.id !== id))
-        console.log(id);
-    }
+    console.log(setPost);
     return (
         <div className='postlist-section card-sec'>
             <Row>
@@ -26,20 +23,19 @@ export default function Blog() {
                                 <tr>
                                     <th>ID</th>
                                     <th>Name</th>
+                                    <th>Date</th>
                                     <th>Edit</th>
-                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {post.map((blogitem, index) => {
-                                    const { title, id } = blogitem;
+                                    const { title, id, date } = blogitem;
                                     return (
                                         <tr key={index}>
                                             <td>{id}</td>
                                             <td>{title}</td>
+                                            <td>{date}</td>
                                             <td><Link className='btn btn-sm btn-primary' to={`/dashboard/edit-post/${id}`}>Edit</Link></td>
-                                            <td> <Button className='btn btn-sm btn-danger' onClick={() => deletePost(id)}>Delete</Button>
-                                            </td>
                                         </tr>
                                     )
                                 })}

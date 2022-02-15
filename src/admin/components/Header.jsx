@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaSearch, FaRegBell, FaRegEnvelope } from "react-icons/fa";
 import { Row, Col, Form, Spinner } from "react-bootstrap";
 import Notification from "./Notification";
 import { Link } from "react-router-dom";
 import { FaGripHorizontal, FaUserAlt } from "react-icons/fa";
-import { FiLogOut } from "react-icons/fi";
 
 const Header = () => {
-  const [notificationtoggle, setNotificationToggle] = React.useState(false);
+  const [notificationtoggle, setNotificationToggle] = useState(false);
   const handleclick = () => {
     setNotificationToggle(!notificationtoggle);
   };
@@ -19,15 +18,11 @@ const Header = () => {
             <div className="header_iner">
               <div className="header_iner_serach">
                 <div className="search_inner">
-                  <form action="#">
-                    <div className="search_field">
-                      <Form>
-                        <Form.Control
-                          type="text" placeholder="Search here..." />
-                      </Form>
-                      <button type="submit"><FaSearch /></button>
-                    </div>
-                  </form>
+                  <div className="search_field">
+                    <Form.Control
+                      type="text" placeholder="Search here..." />
+                    <button type="submit"><FaSearch /></button>
+                  </div>
                 </div>
               </div>
               <div className="header_iner_right">
@@ -51,9 +46,9 @@ const Header = () => {
                           <Notification />
                         </div>
                         <div className="text-center nofity_footer">
-                          <a href="/" className="btn_1">
+                          <Link to="/" className="btn_1">
                             See More
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     ) : (
@@ -92,7 +87,15 @@ const Header = () => {
                             <span><FaGripHorizontal /></span>Settings
                           </li>
                           <li className="dropdown-item">
-                            <Link to="/dashboard/logout"><span><FiLogOut /></span>Log Out</Link>
+                            {localStorage.getItem("login") ? (
+                              <Link to="/logout">
+                                Logout
+                              </Link>
+                            ) : (
+                              <Link to="/login">
+                                Login
+                              </Link>
+                            )}
                           </li>
                         </ul>
                       </div>

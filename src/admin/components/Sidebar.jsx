@@ -21,7 +21,7 @@ const Sidebar = (props) => {
         <ProSidebar collapsed={matche767 ? !props.menuCollapse : props.menuCollapse}>
           <SidebarHeader>
             <div className="logotext">
-              <Link to="/dashboard/home">{props.menuCollapse ? "LT" : "Letxsoft"}</Link>
+              <Link to="/">{props.menuCollapse ? "LT" : "Letxsoft"}</Link>
               <div className="closemenu" onClick={props.menuIconClick}>
                 {props.menuCollapse ? <FaTimes /> : <FaBars />}
               </div>
@@ -33,7 +33,6 @@ const Sidebar = (props) => {
                 <MenuItem active={true} icon={<FiHome />}>Home</MenuItem>
                 <span className="tooltip"></span>
               </NavLink>
-
               <NavLink activeClassName="active" to="/dashboard/post-list">
                 <MenuItem icon={<MdPostAdd />} >Post</MenuItem>
               </NavLink>
@@ -46,7 +45,6 @@ const Sidebar = (props) => {
               <NavLink activeClassName="active" to="/dashboard/setting">
                 <MenuItem icon={<FaGripHorizontal />} >Settings</MenuItem>
               </NavLink>
-
             </Menu>
           </SidebarContent>
         </ProSidebar>
